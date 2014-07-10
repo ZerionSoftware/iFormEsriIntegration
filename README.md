@@ -3,7 +3,7 @@ iFormEsriIntegration
 Developed by: Esri (Environmental Systems Research Institute)
 
 Requirements: 
--iFormBuilder Account (Growing Plan):  (http://iformbuilder.com/)
+-iFormBuilder Account (Growing Plan):  (http://iformbuilder.com/)                                                                                
 -ArcGIS for Desktop
 
 Summary:

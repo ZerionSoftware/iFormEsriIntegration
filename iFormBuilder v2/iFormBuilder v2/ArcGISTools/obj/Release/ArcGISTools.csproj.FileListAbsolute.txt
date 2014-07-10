@@ -1,0 +1,37 @@
+C:\Users\trav5516\Sandbox\iFormBuilder\ArcGISTools\bin\Release\ArcGISTools.dll
+C:\Users\trav5516\Sandbox\iFormBuilder\ArcGISTools\bin\Release\ArcGISTools.pdb
+C:\Users\trav5516\Sandbox\iFormBuilder\ArcGISTools\bin\Release\iFormBuilderAPI.dll
+C:\Users\trav5516\Sandbox\iFormBuilder\ArcGISTools\bin\Release\Newtonsoft.Json.dll
+C:\Users\trav5516\Sandbox\iFormBuilder\ArcGISTools\bin\Release\iFormBuilderAPI.pdb
+C:\Users\trav5516\Sandbox\iFormBuilder\ArcGISTools\bin\Release\Newtonsoft.Json.xml
+C:\Users\trav5516\Sandbox\iFormBuilder\ArcGISTools\obj\Release\ArcGISTools.csprojResolveAssemblyReference.cache
+C:\Users\trav5516\Sandbox\iFormBuilder\ArcGISTools\obj\Release\ArcGISTools.dll
+C:\Users\trav5516\Sandbox\iFormBuilder\ArcGISTools\obj\Release\ArcGISTools.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder\ArcGISTools\bin\Release\ArcGISTools.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\ArcGISTools\bin\Release\ArcGISTools.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder\ArcGISTools\bin\Release\iFormBuilderAPI.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\ArcGISTools\bin\Release\Newtonsoft.Json.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\ArcGISTools\bin\Release\System.Windows.Controls.Input.Toolkit.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\ArcGISTools\bin\Release\System.Windows.Controls.Layout.Toolkit.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\ArcGISTools\bin\Release\WPFToolkit.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\ArcGISTools\bin\Release\iFormBuilderAPI.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder\ArcGISTools\bin\Release\Newtonsoft.Json.xml
+C:\Project Work\iFormBuilder Tools\iFormBuilder\ArcGISTools\obj\Release\ArcGISTools.csprojResolveAssemblyReference.cache
+C:\Project Work\iFormBuilder Tools\iFormBuilder\ArcGISTools\obj\Release\ArcGISTools.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\ArcGISTools\obj\Release\ArcGISTools.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\bin\Release\ArcGISTools.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\bin\Release\ArcGISTools.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\bin\Release\iFormBuilderAPI.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\bin\Release\Newtonsoft.Json.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\bin\Release\System.Windows.Controls.Input.Toolkit.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\bin\Release\System.Windows.Controls.Layout.Toolkit.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\bin\Release\WPFToolkit.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\bin\Release\iFormBuilderAPI.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\bin\Release\Newtonsoft.Json.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\bin\Release\Newtonsoft.Json.xml
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\bin\Release\System.Windows.Controls.Input.Toolkit.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\bin\Release\System.Windows.Controls.Layout.Toolkit.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\bin\Release\WPFToolkit.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\obj\Release\ArcGISTools.csprojResolveAssemblyReference.cache
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\obj\Release\ArcGISTools.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder v2\ArcGISTools\obj\Release\ArcGISTools.pdb

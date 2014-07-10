@@ -1,0 +1,22 @@
+﻿<Window x:Class="iFormBuilder_Toolbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow">
+    <Grid x:Name="LayoutRoot">
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="txtFileToUpload" HorizontalAlignment="Left" TextWrapping="Wrap" Text="&lt;Enter File Name to Process&gt;" VerticalAlignment="Top"/>
+                <Button x:Name="btnUploadFile" Content="Open" HorizontalAlignment="Right" VerticalAlignment="Top" Width="75" Click="btnUploadFile_Click_1"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="txtFileToUpload_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" Text="&lt;Enter Configuration File Name&gt;" VerticalAlignment="Top"/>
+                <Button x:Name="btnUploadFile_Copy" Content="Open" HorizontalAlignment="Right"  VerticalAlignment="Top" Width="75" Click="btnConfigLoad_Click" Grid.Column="2"/>
+            </StackPanel>
+        <!--<xcdg:DataGridControl x:Name="dgExcelFile"
+        ItemsSource="{Binding Path=GridData, Mode=OneWay}" Height="100" />-->
+            <Button x:Name="btnUploadDoc" Content="Upload Document" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="110" Click="btnUploadDoc_Click"/>
+            <Grid x:Name="OptionListGrid" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+       </StackPanel>
+    </Grid>
+
+</Window>

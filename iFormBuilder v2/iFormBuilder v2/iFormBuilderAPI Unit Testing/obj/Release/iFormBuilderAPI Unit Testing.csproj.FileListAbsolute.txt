@@ -1,0 +1,32 @@
+C:\Users\trav5516\Sandbox\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\iFormBuilderAPI Unit Testing.dll
+C:\Users\trav5516\Sandbox\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\iFormBuilderAPI Unit Testing.pdb
+C:\Users\trav5516\Sandbox\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\ArcGISTools.dll
+C:\Users\trav5516\Sandbox\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\iFormBuilderAPI.dll
+C:\Users\trav5516\Sandbox\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\iFormTools.dll
+C:\Users\trav5516\Sandbox\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\Newtonsoft.Json.dll
+C:\Users\trav5516\Sandbox\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\iFormBuilderAPI.pdb
+C:\Users\trav5516\Sandbox\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\ArcGISTools.pdb
+C:\Users\trav5516\Sandbox\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\iFormTools.pdb
+C:\Users\trav5516\Sandbox\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\Newtonsoft.Json.xml
+C:\Users\trav5516\Sandbox\iFormBuilder\iFormBuilderAPI Unit Testing\obj\Release\iFormBuilderAPI Unit Testing.csprojResolveAssemblyReference.cache
+C:\Users\trav5516\Sandbox\iFormBuilder\iFormBuilderAPI Unit Testing\obj\Release\iFormBuilderAPI Unit Testing.dll
+C:\Users\trav5516\Sandbox\iFormBuilder\iFormBuilderAPI Unit Testing\obj\Release\iFormBuilderAPI Unit Testing.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\iFormBuilderAPI Unit Testing.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\iFormBuilderAPI Unit Testing.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\ArcGISTools.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\iFormBuilderAPI.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\iFormTools.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\Newtonsoft.Json.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\System.Windows.Controls.Input.Toolkit.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\System.Windows.Controls.Layout.Toolkit.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\WPFToolkit.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\Excel.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\iFormBuilderAPI.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\ArcGISTools.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\iFormTools.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\Newtonsoft.Json.xml
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\bin\Release\Excel.pdb
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\obj\Release\iFormBuilderAPI Unit Testing.csprojResolveAssemblyReference.cache
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\obj\Release\iFormBuilderAPI Unit Testing.dll
+C:\Project Work\iFormBuilder Tools\iFormBuilder\iFormBuilderAPI Unit Testing\obj\Release\iFormBuilderAPI Unit Testing.pdb

@@ -1,0 +1,48 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+	<PropertyGroup>
+		<!-- Select a Product Configuration -->
+		<InstallShieldProductConfiguration>Express</InstallShieldProductConfiguration>
+		<!-- Select a Visual Studio Configuration / InstallShield Release -->
+		<Configuration>Debug</Configuration>
+		<InstallShieldRelease>$(Configuration)</InstallShieldRelease>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- The InstallShieldProject item selects the project to build -->
+		<InstallShieldProject Include="$(MSBuildProjectDirectory)\$(MSBuildProjectName).isl"/>
+		<!-- The InstallShieldReleaseFlags sets Release Flags -->
+		<!--<InstallShieldReleaseFlags Include=""/>-->
+		<!-- The InstallShieldMergeModulePath specifies what directories are
+		searched for Merge Modules -->
+		<!--<InstallShieldMergeModulePath Include=""/>-->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The ProjectReference items refer to any Visual Studio solutions you want to automatically probe for Project Output Groups.  -->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The TaggedOutputs items allow you to explicitly add extra files to output groups. Each item must include both Name and OutputGroup, as well as TargetPath metadata values. -->
+		<!--<TaggedOutputs Include="C:\My Test Exe.exe">
+			<Name>My Test Project</Name>
+			<OutputGroup>Primary output</OutputGroup>
+			<TargetPath>My Test Exe.exe</TargetPath>
+		</TaggedOutputs> -->
+	</ItemGroup>
+	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2012SpringLimited\InstallShield.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="..\..\iFormBuilderAPI\iFormBuilderAPI.csproj">
+			<Name>iFormBuilderAPI</Name>
+			<Project>{B5AECF27-07BF-40AD-A630-1875CDB4A1ED}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\ArcGISTools\ArcGISTools.csproj">
+			<Name>ArcGISTools1</Name>
+			<Project>{40DBD583-17C4-4E00-9D8D-D4653BEAE992}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\iFormGPTools\iFormGPTools.csproj">
+			<Name>iFormGPTools1</Name>
+			<Project>{D02CDD8B-1CD9-4A34-A017-59850D351079}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\iForm Tools\iFormTools.csproj">
+			<Name>iFormTools1</Name>
+			<Project>{421F0C63-105D-4490-92FE-AE7013AFD882}</Project>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

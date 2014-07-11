@@ -1,6 +1,6 @@
 iFormEsriIntegration
 ====================
-Developed by: Esri (Environmental Systems Research Institute)
+Developed by: Esri Professional Services
 
 Requirements: 
 -iFormBuilder Account (Growing Plan):  (http://iformbuilder.com/)                                                                                

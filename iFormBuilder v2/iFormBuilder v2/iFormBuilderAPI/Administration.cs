@@ -15,6 +15,14 @@ namespace iFormBuilderAPI
         {
             _iFormConfig = new Configuration();
         }
+
+        public AccessCode GetAccessCode(string clientid, string refreshcode, string serverurl)
+        {
+            _iFormConfig.clientid = clientid;
+            _iFormConfig.refreshcode = refreshcode;
+            _iFormConfig.iformserverurl = serverurl;
+            return this.GetAccessCode();
+        }
         /// <summary>
         /// Retrive the access code used to handle interactions with iFormBuilder site
         /// </summary>

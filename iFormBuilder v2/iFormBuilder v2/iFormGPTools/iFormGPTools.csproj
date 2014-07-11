@@ -96,6 +96,7 @@
   <ItemGroup>
     <Compile Include="APLGPUtils.cs" />
     <Compile Include="DownloadiFormDatabaseWithAccessCode.cs" />
+    <Compile Include="GetiFormToken.cs" />
     <Compile Include="SynciFormDatabase.cs" />
     <Compile Include="DownloadiFormDatabase.cs" />
     <Compile Include="GPFactory.cs" />
@@ -126,7 +127,7 @@
     <PreBuildEvent>REM "C:\Program Files (x86)\Common Files\ArcGIS\bin\ESRIRegAsm.exe"   /p:desktop "C:\Project Work\iFormBuilder Tools\iFormBuilder v2\iFormGPTools\bin\Debug\iFormGPTools.dll" /u</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>"C:\Program Files (x86)\Common Files\ArcGIS\bin\ESRIRegAsm.exe"   /p:desktop "C:\Users\Administrator\Downloads\iFormBuilder v2\iFormBuilder v2\iFormGPTools\bin\Debug\iFormGPTools.dll"</PostBuildEvent>
+    <PostBuildEvent>"C:\Program Files (x86)\Common Files\ArcGIS\bin\ESRIRegAsm.exe"   /p:desktop "$(ProjectDir)\$(OutDir)\iFormGPTools.dll"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

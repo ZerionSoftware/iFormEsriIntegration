@@ -33,3 +33,16 @@ C:\Users\Administrator\Downloads\iFormBuilder v2\iFormBuilder v2\ArcGISTools\bin
 C:\Users\Administrator\Downloads\iFormBuilder v2\iFormBuilder v2\ArcGISTools\obj\Debug\ArcGISTools.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Downloads\iFormBuilder v2\iFormBuilder v2\ArcGISTools\obj\Debug\ArcGISTools.dll
 C:\Users\Administrator\Downloads\iFormBuilder v2\iFormBuilder v2\ArcGISTools\obj\Debug\ArcGISTools.pdb
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\ArcGISTools\bin\Debug\ArcGISTools.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\ArcGISTools\bin\Debug\ArcGISTools.pdb
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\ArcGISTools\bin\Debug\iFormBuilderAPI.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\ArcGISTools\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\ArcGISTools\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\ArcGISTools\bin\Debug\WPFToolkit.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\ArcGISTools\bin\Debug\iFormBuilderAPI.pdb
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\ArcGISTools\bin\Debug\System.Windows.Controls.Input.Toolkit.pdb
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\ArcGISTools\bin\Debug\System.Windows.Controls.Layout.Toolkit.pdb
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\ArcGISTools\bin\Debug\WPFToolkit.pdb
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\ArcGISTools\obj\Debug\ArcGISTools.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\ArcGISTools\obj\Debug\ArcGISTools.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\ArcGISTools\obj\Debug\ArcGISTools.pdb

@@ -82,6 +82,14 @@ namespace ESRI.Solutions.iFormBuilder.GPTools
                     name.Name = "DownloadiFormDatabaseWithAccessCode";
                     name.Factory = (IGPFunctionFactory)this;
                     break;
+                case (3):
+                    name = (IGPName)functionName;
+                    name.Category = "iFormBuilder";
+                    name.Description = "Get iFormBuilder Token";
+                    name.DisplayName = "Get token from iFormBuilder to allow data downloads";
+                    name.Name = "GetiFormToken";
+                    name.Factory = (IGPFunctionFactory)this;
+                    break;
             }
 
             return functionName;
@@ -129,6 +137,9 @@ namespace ESRI.Solutions.iFormBuilder.GPTools
                 case ("DownloadiFormDatabaseWithAccessCode"):
                     gpFunction = new ESRI.Solutions.iFormBuilder.GPTools.DownloadiFormDatabaseWithAccessCode();
                     break;
+                case ("GetiFormToken"):
+                    gpFunction = new ESRI.Solutions.iFormBuilder.GPTools.GetiFormToken();
+                    break;
             }
 
             return gpFunction; ;
@@ -147,6 +158,9 @@ namespace ESRI.Solutions.iFormBuilder.GPTools
                     return (IGPName)CreateGPFunctionNames(1);
                 case ("DownloadiFormDatabaseWithAccessCode"):
                     return (IGPName)CreateGPFunctionNames(2);
+                case ("GetiFormToken"):
+                    return (IGPName)CreateGPFunctionNames(3);
+
             }
             return null;
         }
@@ -158,6 +172,7 @@ namespace ESRI.Solutions.iFormBuilder.GPTools
             nameArray.Add(CreateGPFunctionNames(0));
             nameArray.Add(CreateGPFunctionNames(1));
             nameArray.Add(CreateGPFunctionNames(2));
+            nameArray.Add(CreateGPFunctionNames(3));
             return (IEnumGPName)nameArray;
         }
         public IEnumGPEnvironment GetFunctionEnvironments()

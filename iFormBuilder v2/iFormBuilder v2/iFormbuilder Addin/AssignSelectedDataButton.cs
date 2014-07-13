@@ -29,6 +29,7 @@ namespace iFormToolbar
 {
     public class AssignSelectedDataButton : ESRI.ArcGIS.Desktop.AddIns.Button
     {
+
         IGeoProcessor2 _gp = null;
         /// <summary>
         /// A Queue of GPProcess objects each of which represents a geoprocessing tool to be executed asynchronously.

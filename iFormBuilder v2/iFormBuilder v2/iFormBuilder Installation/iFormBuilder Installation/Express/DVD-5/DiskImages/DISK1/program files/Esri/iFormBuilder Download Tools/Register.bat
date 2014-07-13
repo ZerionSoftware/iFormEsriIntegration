@@ -1,2 +1,0 @@
-"C:\Program Files (x86)\Common Files\ArcGIS\bin\ESRIRegAsm.exe" "C:\Program Files (x86)\Esri\iFormBuilder Download Tools\iFormGPTools.dll" /p:desktop
-"C:\Program Files (x86)\Common Files\ArcGIS\bin\ESRIRegAddin.exe" "C:\Program Files (x86)\Esri\iFormBuilder Download Tools\iFormToolbar.esriAddIn"

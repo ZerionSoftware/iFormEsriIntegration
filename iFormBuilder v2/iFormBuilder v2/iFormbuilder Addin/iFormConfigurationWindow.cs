@@ -250,7 +250,7 @@ namespace iFormToolbar
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            iFormConfigurationWindow iFormWindow = iFormConfigurationWindow.GetiFormWindow();
+            /*iFormConfigurationWindow iFormWindow = iFormConfigurationWindow.GetiFormWindow();
             if (!iFormWindow.label10.Text.Contains(".gdb"))
                 return;
 
@@ -286,7 +286,7 @@ namespace iFormToolbar
 
                 // Register the task in the root folder
                 ts.RootFolder.RegisterTaskDefinition(string.Format("AutoUpdate{0}",DateTime.Now.Ticks.ToString()), td);
-            }
+            }*/
         }
     }
 }

@@ -44,5 +44,9 @@
 			<Name>iFormTools1</Name>
 			<Project>{421F0C63-105D-4490-92FE-AE7013AFD882}</Project>
 		</ProjectReference>
+		<ProjectReference Include="..\iFormbuilder Addin\iFormbuilder Add In.csproj">
+			<Name>iFormbuilder Add In</Name>
+			<Project>{E062A4AB-3C51-435E-8218-A41A64830DAE}</Project>
+		</ProjectReference>
 	</ItemGroup>
 </Project>

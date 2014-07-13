@@ -340,14 +340,18 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>ArcGISTools.Primary_output</td><td>{2550957F-963F-426B-A609-4FDF247D99A7}</td><td>INSTALLDIR</td><td>2</td><td/><td>arcgistools.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ArcGISTools.Primary_output</td><td>{0323B471-0ACB-435C-90DA-5369BBD782E6}</td><td>INSTALLDIR</td><td>2</td><td/><td>arcgistools.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{B0D6C1E3-755B-48A4-93FA-9A3B98B22BB9}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{822C8D23-2A96-484F-A740-685BFBFAD47D}</td><td>PersonalFolder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>ISX_DEFAULTCOMPONENT2</td><td>{5AC48C0A-D29C-4595-BDA3-71B5FF11FF8C}</td><td>ARCGIS2</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT2</td><td>{7A346AD2-5BE5-4AEA-BD38-5F0E615ABF6E}</td><td>ARCGIS2</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{A5C7D590-0B64-46E2-BB13-2C111708272F}</td><td>IFORMBUILDER</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>iFormBuilderAPI.Primary_output</td><td>{3359DAEE-F2FB-449C-B9F9-9FA63E7E4FC2}</td><td>INSTALLDIR</td><td>2</td><td/><td>iformbuilderapi.primary_outp</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>iFormGPTools.Primary_output</td><td>{81202068-5BFD-4321-B07D-3CCDB01D71F4}</td><td>INSTALLDIR</td><td>2</td><td/><td>iformgptools.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>iFormTools.Primary_output</td><td>{58DCE25B-C33A-407B-87EB-DFF28F482C18}</td><td>INSTALLDIR</td><td>2</td><td/><td>iformtools.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT4</td><td>{4942A89C-D497-4430-BB38-E2C1A7B0FAC5}</td><td>IFORMBUILDER1</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT7</td><td>{45CCC2FF-3E8E-4C67-B065-6CA07F2CE60C}</td><td>DATABASEDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>iFormBuilderAPI.Primary_output</td><td>{4C55B82B-44AF-4A33-9F01-F38E0A1F0977}</td><td>INSTALLDIR</td><td>2</td><td/><td>iformbuilderapi.primary_outp</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>iFormGPTools.Primary_output</td><td>{A89BCE4F-D89D-4BC3-8D55-386849B19AC4}</td><td>INSTALLDIR</td><td>2</td><td/><td>iformgptools.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>iFormTools.Primary_output</td><td>{34C6AA56-B726-4945-8E26-968EF2AEED79}</td><td>INSTALLDIR</td><td>2</td><td/><td>iformtools.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>iFormbuilder_Add_In.Localized_resources</td><td>{6F9882BF-4642-42F5-AFE9-BA25322E7DEF}</td><td>INSTALLDIR</td><td>2</td><td/><td>iformbuilder_add_in.localize</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>iFormbuilder_Add_In.Primary_output</td><td>{511C95D3-7A57-4272-BC51-2117013C9182}</td><td>INSTALLDIR</td><td>2</td><td/><td>iformbuilder_add_in.primary_</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1059,6 +1063,7 @@
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>ARCGIS2</td><td>ISX_DEFAULTCOMPONENT2</td></row>
+		<row><td>DATABASEDIR</td><td>ISX_DEFAULTCOMPONENT7</td></row>
 		<row><td>IFORMBUILDER</td><td>ISX_DEFAULTCOMPONENT3</td></row>
 		<row><td>PersonalFolder</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 	</table>
@@ -1156,8 +1161,9 @@
 		<row><td>FavoritesFolder</td><td>TARGETDIR</td><td>.:FAVORI~1|Favorites</td><td/><td>0</td><td/></row>
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
 		<row><td>GlobalAssemblyCache</td><td>TARGETDIR</td><td>.:Global~1|GlobalAssemblyCache</td><td/><td>0</td><td/></row>
-		<row><td>IFORMBUILDER</td><td>ESRI</td><td>IFORMB~1|iFormBuilder</td><td/><td>0</td><td/></row>
-		<row><td>IFORMBUILDER_DOWNLOAD_TOOLS</td><td>ESRI</td><td>IFORMB~1|iFormBuilder Download Tools</td><td/><td>0</td><td/></row>
+		<row><td>IFORMBUILDER</td><td>ProgramFilesFolder</td><td>IFORMB~1|iFormBuilder</td><td/><td>0</td><td/></row>
+		<row><td>IFORMBUILDER1</td><td>ARCGIS2</td><td>IFORMB~1|iFormBuilder</td><td/><td>0</td><td/></row>
+		<row><td>IFORMBUILDER_DOWNLOAD_TOOLS</td><td>IFORMBUILDER</td><td>IFORMB~1|iFormBuilder Download Tools</td><td/><td>0</td><td/></row>
 		<row><td>INSTALLDIR</td><td>IFORMBUILDER_DOWNLOAD_TOOLS</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>ISCommonFilesFolder</td><td>CommonFilesFolder</td><td>Instal~1|InstallShield</td><td/><td>0</td><td/></row>
 		<row><td>ISMyCompanyDir</td><td>ProgramFilesFolder</td><td>MYCOMP~1|My Company Name</td><td/><td>0</td><td/></row>
@@ -1882,9 +1888,13 @@
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT2</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT3</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT4</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT7</td></row>
 		<row><td>AlwaysInstall</td><td>iFormBuilderAPI.Primary_output</td></row>
 		<row><td>AlwaysInstall</td><td>iFormGPTools.Primary_output</td></row>
 		<row><td>AlwaysInstall</td><td>iFormTools.Primary_output</td></row>
+		<row><td>AlwaysInstall</td><td>iFormbuilder_Add_In.Localized_resources</td></row>
+		<row><td>AlwaysInstall</td><td>iFormbuilder_Add_In.Primary_output</td></row>
 	</table>
 
 	<table name="File">
@@ -1900,15 +1910,17 @@
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
 		<row><td>arcgistools.primary_output</td><td>ArcGISTools.Primary_output</td><td>ArcGISTools.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ArcGISTools1&gt;|Built</td><td>3</td><td/></row>
-		<row><td>config.xml1</td><td>ISX_DEFAULTCOMPONENT</td><td>config.xml</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\ArcGIS\iformbuilder\config.xml</td><td>1</td><td/></row>
-		<row><td>iformbuilder.docx2</td><td>ISX_DEFAULTCOMPONENT</td><td>IFORMB~1.DOC|iFormBuilder.docx</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\Documentation\iFormBuilder.docx</td><td>1</td><td/></row>
+		<row><td>config.xml3</td><td>ISX_DEFAULTCOMPONENT4</td><td>config.xml</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\ArcGIS\iformbuilder\config.xml</td><td>1</td><td/></row>
+		<row><td>iformbuilder.docx3</td><td>ISX_DEFAULTCOMPONENT4</td><td>IFORMB~1.DOC|iFormBuilder.docx</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\Documentation\iFormBuilder.docx</td><td>1</td><td/></row>
+		<row><td>iformbuilder_add_in.localize</td><td>iFormbuilder_Add_In.Localized_resources</td><td>iFormbuilder Add In.Localized resources</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormbuilder Add In&gt;|LocalizedResourceDlls</td><td>3</td><td/></row>
+		<row><td>iformbuilder_add_in.primary_</td><td>iFormbuilder_Add_In.Primary_output</td><td>iFormbuilder Add In.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormbuilder Add In&gt;|Built</td><td>3</td><td/></row>
 		<row><td>iformbuilderapi.primary_outp</td><td>iFormBuilderAPI.Primary_output</td><td>iFormBuilderAPI.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormBuilderAPI&gt;|Built</td><td>3</td><td/></row>
 		<row><td>iformgptools.primary_output</td><td>iFormGPTools.Primary_output</td><td>iFormGPTools.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormGPTools1&gt;|Built</td><td>3</td><td/></row>
-		<row><td>iformtoolbar.esriaddin</td><td>ISX_DEFAULTCOMPONENT</td><td>IFORMT~1.ESR|iFormToolbar.esriAddIn</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Project Work\iFormBuilder Tools\iFormBuilder v2\iFormbuilder Addin\bin\Debug\iFormToolbar.esriAddIn</td><td>1</td><td/></row>
+		<row><td>iformtoolbar.esriaddin</td><td>ISX_DEFAULTCOMPONENT</td><td>IFORMT~1.ESR|iFormToolbar.esriAddIn</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iFormbuilder Addin\bin\Release\iFormToolbar.esriAddIn</td><td>1</td><td/></row>
 		<row><td>iformtools.primary_output</td><td>iFormTools.Primary_output</td><td>iFormTools.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormTools1&gt;|Built</td><td>3</td><td/></row>
-		<row><td>iformtools.tbx1</td><td>ISX_DEFAULTCOMPONENT</td><td>IFORMT~1.TBX|iFormTools.tbx</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\ArcGIS\iformbuilder\iFormTools.tbx</td><td>1</td><td/></row>
-		<row><td>register.bat2</td><td>ISX_DEFAULTCOMPONENT</td><td>Register.bat</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\ArcGIS\iformbuilder\Register.bat</td><td>1</td><td/></row>
-		<row><td>template.mxd1</td><td>ISX_DEFAULTCOMPONENT</td><td>Template.mxd</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\ArcGIS\iformbuilder\Template.mxd</td><td>1</td><td/></row>
+		<row><td>iformtools.tbx3</td><td>ISX_DEFAULTCOMPONENT4</td><td>IFORMT~1.TBX|iFormTools.tbx</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\ArcGIS\iformbuilder\iFormTools.tbx</td><td>1</td><td/></row>
+		<row><td>register.bat</td><td>ISX_DEFAULTCOMPONENT</td><td>Register.bat</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iformbuilder\Register.bat</td><td>1</td><td/></row>
+		<row><td>template.mxd3</td><td>ISX_DEFAULTCOMPONENT4</td><td>Template.mxd</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\ArcGIS\iformbuilder\Template.mxd</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2165,14 +2177,18 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
-		<row><td>ArcGISTools.Primary_output</td><td/><td/><td>_0BB8BEF6_0943_44D9_B6C0_22D044ED3179_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ArcGISTools.Primary_output</td><td/><td/><td>_496ED1FA_829D_4DA0_85A2_49B832F59A10_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_14D84E89_A6A2_4EA2_B026_691A02155D85_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_0B67D414_F484_4AE9_A20B_7FB4126C633E_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>ISX_DEFAULTCOMPONENT2</td><td/><td/><td>_C48C117F_7456_4FF6_817D_68B87D145DE5_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT2</td><td/><td/><td>_AB594999_3FD8_43C7_B981_2F21D521D6B5_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT3</td><td/><td/><td>_77AC15EB_D16B_4344_B54F_EE453CF00F5D_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>iFormBuilderAPI.Primary_output</td><td/><td/><td>_3261B878_EBDA_4FA0_86CA_3F3F2392D54B_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>iFormGPTools.Primary_output</td><td/><td/><td>_47E7CABD_0D1F_46F0_BBD1_139C36C5385B_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>iFormTools.Primary_output</td><td/><td/><td>_441902AF_BC83_4584_8E0F_17816BB0FE61_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT4</td><td/><td/><td>_6BF5DBD6_8948_46AB_9F02_1DAE64954204_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT7</td><td/><td/><td>_195C54A9_ECEF_481F_BA62_06940ADA57F1_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>iFormBuilderAPI.Primary_output</td><td/><td/><td>_14CD4BFD_1D9C_4169_93A9_C00FB5F62D0F_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>iFormGPTools.Primary_output</td><td/><td/><td>_23AC0F66_C52A_4D08_BD2F_C542ABDED96A_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>iFormTools.Primary_output</td><td/><td/><td>_4F744716_07AB_446C_A904_F83AC1F3BD5F_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>iFormbuilder_Add_In.Localized_resources</td><td/><td/><td>_B57A4F43_2AA6_4B15_A254_B56C61442E93_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>iFormbuilder_Add_In.Primary_output</td><td/><td/><td>_44BC3B7E_ABC9_452A_98DA_FD1692677B6F_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -4151,7 +4167,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{7AB8A249-505F-46C0-B9C2-F111BA9FCD8E}</td></row>
 		<row><td>ISUSSignature</td><td>{A1CFC004-54E6-4CC4-8729-364AD80B93A0}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewCustomActions,viewAppFiles,viewSystemSearch,viewDependencies,viewProject,viewRelease</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewCustomActions,viewAppFiles,viewSystemSearch,viewDependencies,viewProject,viewRelease,viewUpgradePaths,viewUpdateService</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4529,7 +4545,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
 		<row><td>ProductCode</td><td>{878442AF-1D91-466F-B92F-C8C8D72A1166}</td><td/></row>
 		<row><td>ProductName</td><td>iFormBuilder Download Tools</td><td/></row>
-		<row><td>ProductVersion</td><td>1.02.0000</td><td/></row>
+		<row><td>ProductVersion</td><td>1.03.0002</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>

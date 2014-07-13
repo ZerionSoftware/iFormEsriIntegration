@@ -228,11 +228,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <AddInContent Include="Config.zh-CN.xml">
-      <SubType>Designer</SubType>
-    </AddInContent>
-  </ItemGroup>
-  <ItemGroup>
     <AddInContent Include="Images\SelectionTargetComboBox.png" />
   </ItemGroup>
   <ItemGroup>
@@ -339,4 +334,7 @@
     </ESRIAddInProperties>
     <VisualStudio />
   </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>REM "C:\Program Files (x86)\Common Files\ArcGIS\bin\ESRIRegAddin.exe" ""$(ProjectDir)\$(OutDir)\iFormToolbar.esriAddIn"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

@@ -12,8 +12,7 @@ namespace iFormBuilder_Toolbox
         {
             get
             {
-                Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-                string agsfolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "\\ArcGIS";
+                string agsfolder = string.Format("{0)\\{1}", Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ArcGIS");
                 string iformfolder = String.Empty;
                 if (Directory.Exists(agsfolder))
                 {

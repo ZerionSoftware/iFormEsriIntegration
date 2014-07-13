@@ -142,7 +142,6 @@ namespace iFormBuilderAPI_Unit_Testing
         [TestMethod()]
         public void SaveConfigurationTest()
         {
-            Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             string agsfolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "\\ArcGIS";
             string iformfolder = String.Empty;
             if (Directory.Exists(agsfolder))

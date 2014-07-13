@@ -156,6 +156,10 @@ namespace ESRI.Solutions.iFormBuilder.GPTools
                 value.SetAsText(ac.access_token);
                 if (message != null)
                     message.AddMessage(string.Format("Access Token: {0}", ac.access_token));
+
+                gpUtils.PackGPValue(value, gpParameter);
+                if (message != null)
+                    message.AddMessage("Token Ready for Use");
             }
             catch (Exception ex)
             {
@@ -165,7 +169,7 @@ namespace ESRI.Solutions.iFormBuilder.GPTools
             finally
             {
                 if (message != null)
-                    message.AddMessage("Finished Downloading Database");
+                    message.AddMessage("Token Generation Completed");
             }
         }
 

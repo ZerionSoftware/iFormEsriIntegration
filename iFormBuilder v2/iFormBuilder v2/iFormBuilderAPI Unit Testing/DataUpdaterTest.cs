@@ -53,7 +53,7 @@ namespace iFormBuilderAPI_Unit_Testing
             config.iformserverurl = "";
             config.iformusername = "";
             config.iformpassword = "";
-            config.profileid = ;
+            config.profileid = 0;
             config.arcgisurl = "";
             config.arcgisusername = "";
             config.arcgispassword = "";

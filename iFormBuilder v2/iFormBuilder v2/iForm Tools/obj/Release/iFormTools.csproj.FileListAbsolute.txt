@@ -51,3 +51,20 @@ C:\Project Work\iFormBuilder Tools\iFormBuilder v2\iForm Tools\bin\Release\WPFTo
 C:\Project Work\iFormBuilder Tools\iFormBuilder v2\iForm Tools\obj\Release\iFormTools.csprojResolveAssemblyReference.cache
 C:\Project Work\iFormBuilder Tools\iFormBuilder v2\iForm Tools\obj\Release\iFormTools.dll
 C:\Project Work\iFormBuilder Tools\iFormBuilder v2\iForm Tools\obj\Release\iFormTools.pdb
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\iFormTools.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\iFormTools.pdb
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\ArcGISTools.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\ESRI.ArcGIS.ADF.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\iFormBuilderAPI.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\System.Windows.Controls.Input.Toolkit.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\System.Windows.Controls.Layout.Toolkit.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\WPFToolkit.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\ArcGISTools.pdb
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\iFormBuilderAPI.pdb
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\ESRI.ArcGIS.ADF.xml
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\System.Windows.Controls.Input.Toolkit.pdb
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\System.Windows.Controls.Layout.Toolkit.pdb
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\bin\Release\WPFToolkit.pdb
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\obj\Release\iFormTools.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\obj\Release\iFormTools.dll
+\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder v2\iFormBuilder v2\iForm Tools\obj\Release\iFormTools.pdb

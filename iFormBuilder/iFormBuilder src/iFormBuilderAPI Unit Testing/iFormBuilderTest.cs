@@ -53,8 +53,8 @@ namespace iFormBuilderAPI_Unit_Testing
         //
         //Use TestInitialize to run code before running each test
         IConfiguration config;
-        long pagetotest = 148052;
-        string configfile = @"C:\Users\trav5516\Documents\ArcGIS\iformbuilder\config.xml";
+        long pagetotest = 8667965;
+        string configfile = @"C:\Project Work\iFormBuilder Tools\Config\crs_config.xml";
 
         //long pagetotest = 144678;
         [TestInitialize()]
@@ -82,6 +82,21 @@ namespace iFormBuilderAPI_Unit_Testing
             api.ReadConfiguration(configfile);
 
             AccessCode actual;
+            actual = api.accesscode;
+            Assert.IsFalse(actual.isExpired);
+        }
+
+        /// <summary>
+        ///A test for ifombuilder_accesscode
+        ///</summary>
+        [TestMethod()]
+        public void GetAccessToken()
+        {
+            iFormBuilder api = new iFormBuilder();
+            api.ReadConfiguration(configfile);
+
+            AccessCode actual;
+            actual = api.accesscode;
             actual = api.accesscode;
             Assert.IsFalse(actual.isExpired);
         }

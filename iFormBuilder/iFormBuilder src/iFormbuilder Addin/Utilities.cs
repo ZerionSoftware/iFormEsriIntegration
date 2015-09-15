@@ -8,19 +8,37 @@ namespace iFormToolbar
 {
     public static class Utilities
     {
+
+        private static string _iformconfigfolder = string.Format("{0}\\{1}",Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),"ESRI");
         public static string iFormFolder
         {
             get
             {
-                string agsfolder = Environment.GetFolderPath(Environment.SpecialFolder.CommonDocuments) + "\\ArcGIS";
-                string iformfolder = String.Empty;
-                if (Directory.Exists(agsfolder))
+                try
                 {
-                    iformfolder = agsfolder + "\\iformbuilder";
-                    if (!Directory.Exists(iformfolder))
-                        Directory.CreateDirectory(iformfolder);
+                    if (_iformconfigfolder == string.Format("{0}\\{1}",Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),"ESRI"))
+                    {
+                        string agsfolder = _iformconfigfolder;
+                        string iformfolder = String.Empty;
+                        if (Directory.Exists(agsfolder))
+                        {
+                            iformfolder = string.Format("{0}\\{1}",agsfolder,"iformbuilder");
+                            if (!Directory.Exists(iformfolder))
+                                Directory.CreateDirectory(iformfolder);
+                        }
+                        return iformfolder;
+                    }
+                    else
+                        return _iformconfigfolder;
                 }
-                return iformfolder;
+                catch (Exception ex)
+                {
+                    return "";
+                }
+            }
+            set
+            {
+                _iformconfigfolder = value;
             }
         }
 

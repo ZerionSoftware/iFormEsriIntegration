@@ -53,6 +53,7 @@ namespace iFormToolbar
                 this.txtArcGISUsername.Text = iFormAPI.iformconfig.arcgisusername;
                 this.txtArcGISPassword.Text = iFormAPI.iformconfig.arcgispassword;
                 this.txtProfileID.Text = iFormAPI.iformconfig.profileid.ToString();
+                this.txtSecretKey.Text = iFormAPI.iformconfig.secretkey;
                 UpdatePageInformation();
             }
 
@@ -196,6 +197,7 @@ namespace iFormToolbar
         {
             iFormAPI.iformconfig.clientid = this.txtClientID.Text;
             iFormAPI.iformconfig.refreshcode = this.txtRefreshCode.Text;
+            iFormAPI.iformconfig.secretkey = this.txtSecretKey.Text;
             iFormAPI.iformconfig.iformserverurl = this.txtiFormServerURL.Text;
             iFormAPI.iformconfig.iformusername = this.txtiFormUserName.Text;
             iFormAPI.iformconfig.iformpassword = this.txtiFormpassword.Text;
@@ -229,7 +231,6 @@ namespace iFormToolbar
                 string workspaceName = gxDialog.FinalLocation.FullName + "/" + gxDialog.Name;
                 this.label10.Text = workspaceName;
             }
-            
         }
 
         private void createToolStripMenuItem_Click(object sender, EventArgs e)
@@ -287,6 +288,16 @@ namespace iFormToolbar
                 // Register the task in the root folder
                 ts.RootFolder.RegisterTaskDefinition(string.Format("AutoUpdate{0}",DateTime.Now.Ticks.ToString()), td);
             }*/
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

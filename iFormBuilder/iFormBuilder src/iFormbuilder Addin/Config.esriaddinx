@@ -2,13 +2,13 @@
   <Name>iFormBuilder Tools</Name>
   <AddInID>{B2581E28-AF02-495E-ADAE-0D3E0F5A8C9E}</AddInID>
   <Description>Tools to handle interaction between iFormBuilder data and ArcGIS Platform</Description>
-  <Version>4.00</Version>
+  <Version>4.02</Version>
   <Image>Images\iFormToolbar.png</Image>
   <Author>Esri Professional Services</Author>
   <Company>Esri</Company>
   <Date>7/13/2014</Date>
   <Targets>
-    <Target name="Desktop" version="10.2" />
+    <Target name="Desktop" version="10.3.1" />
   </Targets>
   <AddIn language="CLR4.0" library="iFormToolbar.dll" namespace="iFormToolbar">
     <ArcMap>
@@ -22,25 +22,7 @@
         <Button id="Esri_Solutions_iFormToolbar_SyncSelectedDataButton" class="SyncSelectedDataButton" caption="Sync the Selected data" category="Framework Addin" image="Images\refresh.png" tip="Sync Selected Data Table" message="Sync Selected Data Table">
           <Help heading="Add-in button">Sync Data</Help>
         
-        </Button><!--        <ComboBox id="Esri_Solutions_iFormToolbar_UserTargetComboBox" class="UserTargetComboBox" tip="Select the selection dataset." message="iFormBuilder Users." caption="Selection Target:" showCaption="false" category="Framework AddIn" editable="true" sizeString="WWWWWWWWWWWWWW" rows="4" itemSizeString="WWWWWWWWWWWWWW" hintText="User Assignment">
-          <Help heading="Add-in ComboBox">Use this combo box to set the selection target.</Help>
-        </ComboBox>
-        <Button id="Esri_Solutions_iFormToolbar_AssignSelectedDataButton" class="AssignSelectedDataButton" caption="Assign to selected users" category="Framework Addin" image="Images\refresh.png" tip="Assign Users" message="Assign Users">
-          <Help heading="Add-in button">Upload Data</Help>
         </Button>
-        <ComboBox id="Esri_Solutions_iFormToolbar_SelectionTargetComboBox" class="SelectionTargetComboBox" tip="Select the selection dataset." message="Select Data Table to Download." caption="Selection Target:" showCaption="false" category="Framework AddIn" image="Images\SelectionTargetComboBox.png" editable="true" sizeString="WWWWWWWWWWWWWW" rows="4" itemSizeString="WWWWWWWWWWWWWW" hintText="Selection target">
-                   <Help heading="Add-in ComboBox">Use this combo box to set the selection target.</Help>
-        </ComboBox>
-
-        <ComboBox id="Esri_Solutions_iFormToolbar_LocationFavorTargetComboBox" class="LocationFavorTargetComboBox" tip="Which location method to favor in feature creation" message="Location Favoring" caption="Select Location:" showCaption="false" category="Framework AddIn" image="Images\SelectionTargetComboBox.png" editable="true" sizeString="WWWWWWWWWWWWWW" rows="4" itemSizeString="WWWWWWWWWWWWWW" hintText="Location Favoring">
-                   <Help heading="Add-in ComboBox">Use this combo box to set the selection target.</Help>
-        </ComboBox>
-        <ComboBox id="Esri_Solutions_iFormToolbar_TrueFalseToggleComboBox" class="TrueFalseToggleComboBox" tip="Download Tables as Feature Clases" message="Download Tables as Feature Clases" caption="Feature Clases:" showCaption="false" category="Framework AddIn" editable="false" sizeString="WWWWW" rows="2" itemSizeString="WWWWW" hintText="Download Tables as Feature Clases">
-          <Help heading="Add-in ComboBox">Use this combo box to set the selection target.</Help>
-        </ComboBox>
-        <Button id="Esri_Solutions_iFormToolbar_AssignSelectedDataButton" class="AssignSelectedDataButton" caption="Assign to selected users" category="Framework Addin" image="Images\refresh.png" tip="Assign Users" message="Assign Users">
-          <Help heading="Add-in button">Upload Data</Help>
-        </Button>-->
       </Commands>
       <Extensions>
         <Extension id="Esri_Solutions_iFormToolbar_SimpleExtension" autoLoad="false" productName="iFormBuilder Tools Extension" showInExtensionDialog="true" class="SelectionExtension">
@@ -50,13 +32,6 @@
       <Toolbars>
         <Toolbar id="Esri_Solutions_iFormToolbar_AddInToolbar" caption="iFormBuilder Toolset" showInitially="true">
           <Items>
-            <!--Reference to the custom combobox-->
-            <!--<ComboBox refID="Esri_Solutions_iFormToolbar_SelectionTargetComboBox" separator="true" />
-           <ComboBox refID="Esri_Solutions_iFormToolbar_LocationFavorTargetComboBox" separator="true" />
-            <ComboBox refID="Esri_Solutions_iFormToolbar_TrueFalseToggleComboBox" separator="true" />
-            <ComboBox refID="Esri_Solutions_iFormToolbar_UserTargetComboBox" separator="true" />
-             <Button refID="Esri_Solutions_iFormToolbar_AssignSelectedDataButton" />-->
-
               <Button refID="Esri_Solutions_iFormToolbar_DownloadSelectedDataButton" />
               <Button refID="Esri_Solutions_iFormToolbar_SyncSelectedDataButton" />
             <Button refID="Esri_Solutions_iFormToolbar_ToggleConfigWinBtn" />

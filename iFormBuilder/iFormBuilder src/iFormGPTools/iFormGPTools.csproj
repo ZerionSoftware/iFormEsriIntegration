@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>iFormGPTools</RootNamespace>
     <AssemblyName>iFormGPTools</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <SccProjectName>SAK</SccProjectName>
@@ -127,7 +127,7 @@
     <PreBuildEvent>REM "C:\Program Files (x86)\Common Files\ArcGIS\bin\ESRIRegAsm.exe"   /p:desktop "C:\Project Work\iFormBuilder Tools\iFormBuilder v2\iFormGPTools\bin\Debug\iFormGPTools.dll" /u</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>"C:\Program Files (x86)\Common Files\ArcGIS\bin\ESRIRegAsm.exe"   /p:desktop "$(ProjectDir)\$(OutDir)\iFormGPTools.dll"</PostBuildEvent>
+    <PostBuildEvent>REM "C:\Program Files (x86)\Common Files\ArcGIS\bin\ESRIRegAsm.exe"   /p:desktop "$(ProjectDir)\$(OutDir)\iFormGPTools.dll"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

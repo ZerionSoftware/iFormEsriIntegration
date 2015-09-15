@@ -56,6 +56,8 @@
             this.workspaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setWorkspaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.picServerValid = new System.Windows.Forms.PictureBox();
@@ -67,8 +69,8 @@
             this.picIFormArcGISURLValid = new System.Windows.Forms.PictureBox();
             this.picArcGISOnlineUserValid = new System.Windows.Forms.PictureBox();
             this.picArcGISOnlinePasswordValid = new System.Windows.Forms.PictureBox();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtSecretKey = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picServerValid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIFormUserValid)).BeginInit();
@@ -150,21 +152,21 @@
             // 
             // txtRefreshCode
             // 
-            this.txtRefreshCode.Location = new System.Drawing.Point(3, 229);
+            this.txtRefreshCode.Location = new System.Drawing.Point(3, 271);
             this.txtRefreshCode.Name = "txtRefreshCode";
             this.txtRefreshCode.Size = new System.Drawing.Size(200, 20);
             this.txtRefreshCode.TabIndex = 8;
             // 
             // txtProfileID
             // 
-            this.txtProfileID.Location = new System.Drawing.Point(3, 270);
+            this.txtProfileID.Location = new System.Drawing.Point(3, 312);
             this.txtProfileID.Name = "txtProfileID";
             this.txtProfileID.Size = new System.Drawing.Size(200, 20);
             this.txtProfileID.TabIndex = 9;
             // 
             // txtArcGISPassword
             // 
-            this.txtArcGISPassword.Location = new System.Drawing.Point(3, 393);
+            this.txtArcGISPassword.Location = new System.Drawing.Point(3, 435);
             this.txtArcGISPassword.Name = "txtArcGISPassword";
             this.txtArcGISPassword.PasswordChar = '*';
             this.txtArcGISPassword.Size = new System.Drawing.Size(200, 20);
@@ -173,14 +175,14 @@
             // 
             // txtArcGISURL
             // 
-            this.txtArcGISURL.Location = new System.Drawing.Point(3, 311);
+            this.txtArcGISURL.Location = new System.Drawing.Point(3, 353);
             this.txtArcGISURL.Name = "txtArcGISURL";
             this.txtArcGISURL.Size = new System.Drawing.Size(200, 20);
             this.txtArcGISURL.TabIndex = 11;
             // 
             // txtArcGISUsername
             // 
-            this.txtArcGISUsername.Location = new System.Drawing.Point(3, 352);
+            this.txtArcGISUsername.Location = new System.Drawing.Point(3, 394);
             this.txtArcGISUsername.Name = "txtArcGISUsername";
             this.txtArcGISUsername.Size = new System.Drawing.Size(200, 20);
             this.txtArcGISUsername.TabIndex = 12;
@@ -188,7 +190,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 212);
+            this.label5.Location = new System.Drawing.Point(3, 254);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 13);
             this.label5.TabIndex = 13;
@@ -197,7 +199,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 253);
+            this.label6.Location = new System.Drawing.Point(3, 295);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(107, 13);
             this.label6.TabIndex = 14;
@@ -206,7 +208,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 294);
+            this.label7.Location = new System.Drawing.Point(3, 336);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(99, 13);
             this.label7.TabIndex = 15;
@@ -215,7 +217,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 335);
+            this.label8.Location = new System.Drawing.Point(3, 377);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(125, 13);
             this.label8.TabIndex = 16;
@@ -224,7 +226,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 376);
+            this.label9.Location = new System.Drawing.Point(3, 418);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(123, 13);
             this.label9.TabIndex = 17;
@@ -256,21 +258,21 @@
             // loadConfigurationToolStripMenuItem
             // 
             this.loadConfigurationToolStripMenuItem.Name = "loadConfigurationToolStripMenuItem";
-            this.loadConfigurationToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.loadConfigurationToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.loadConfigurationToolStripMenuItem.Text = "Load";
             this.loadConfigurationToolStripMenuItem.Click += new System.EventHandler(this.loadConfigurationToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -294,16 +296,31 @@
             // setWorkspaceToolStripMenuItem
             // 
             this.setWorkspaceToolStripMenuItem.Name = "setWorkspaceToolStripMenuItem";
-            this.setWorkspaceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.setWorkspaceToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.setWorkspaceToolStripMenuItem.Text = "Set";
             this.setWorkspaceToolStripMenuItem.Click += new System.EventHandler(this.setWorkspaceToolStripMenuItem_Click);
             // 
             // createToolStripMenuItem
             // 
             this.createToolStripMenuItem.Name = "createToolStripMenuItem";
-            this.createToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.createToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.createToolStripMenuItem.Text = "Create";
             this.createToolStripMenuItem.Click += new System.EventHandler(this.createToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(58, 20);
+            this.toolStripMenuItem1.Text = "Utilities";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(193, 22);
+            this.toolStripMenuItem2.Text = "Create Scheduled Task";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // label10
             // 
@@ -317,7 +334,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 420);
+            this.label11.Location = new System.Drawing.Point(6, 462);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(99, 13);
             this.label11.TabIndex = 24;
@@ -422,26 +439,31 @@
             this.picArcGISOnlinePasswordValid.TabStop = false;
             this.picArcGISOnlinePasswordValid.Visible = false;
             // 
-            // toolStripMenuItem1
+            // label12
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(58, 20);
-            this.toolStripMenuItem1.Text = "Utilities";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(3, 212);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(119, 13);
+            this.label12.TabIndex = 36;
+            this.label12.Text = "iFormBuilder Secret Key";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // toolStripMenuItem2
+            // txtSecretKey
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(193, 22);
-            this.toolStripMenuItem2.Text = "Create Scheduled Task";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            this.txtSecretKey.Location = new System.Drawing.Point(3, 229);
+            this.txtSecretKey.Name = "txtSecretKey";
+            this.txtSecretKey.Size = new System.Drawing.Size(200, 20);
+            this.txtSecretKey.TabIndex = 35;
+            this.txtSecretKey.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // iFormConfigurationWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtSecretKey);
             this.Controls.Add(this.picArcGISOnlinePasswordValid);
             this.Controls.Add(this.picArcGISOnlineUserValid);
             this.Controls.Add(this.picIFormArcGISURLValid);
@@ -532,5 +554,7 @@
         private System.Windows.Forms.PictureBox picArcGISOnlinePasswordValid;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtSecretKey;
     }
 }

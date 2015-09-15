@@ -343,10 +343,10 @@
 		<row><td>ArcGISTools.Primary_output</td><td>{0323B471-0ACB-435C-90DA-5369BBD782E6}</td><td>INSTALLDIR</td><td>2</td><td/><td>arcgistools.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{B0D6C1E3-755B-48A4-93FA-9A3B98B22BB9}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{822C8D23-2A96-484F-A740-685BFBFAD47D}</td><td>PersonalFolder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>ISX_DEFAULTCOMPONENT2</td><td>{7A346AD2-5BE5-4AEA-BD38-5F0E615ABF6E}</td><td>ARCGIS2</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{A5C7D590-0B64-46E2-BB13-2C111708272F}</td><td>IFORMBUILDER</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td>{4942A89C-D497-4430-BB38-E2C1A7B0FAC5}</td><td>IFORMBUILDER1</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT5</td><td>{C82D9F07-1332-40AB-AC96-6A49B78C5824}</td><td>ALLUSERSPROFILE</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT6</td><td>{9F038D5F-AB54-43ED-BD28-258B25AC0887}</td><td>ESRI1</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT7</td><td>{45CCC2FF-3E8E-4C67-B065-6CA07F2CE60C}</td><td>DATABASEDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>iFormBuilderAPI.Primary_output</td><td>{4C55B82B-44AF-4A33-9F01-F38E0A1F0977}</td><td>INSTALLDIR</td><td>2</td><td/><td>iformbuilderapi.primary_outp</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>iFormGPTools.Primary_output</td><td>{A89BCE4F-D89D-4BC3-8D55-386849B19AC4}</td><td>INSTALLDIR</td><td>2</td><td/><td>iformgptools.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
@@ -1064,8 +1064,8 @@
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>ALLUSERSPROFILE</td><td>ISX_DEFAULTCOMPONENT5</td></row>
-		<row><td>ARCGIS2</td><td>ISX_DEFAULTCOMPONENT2</td></row>
 		<row><td>DATABASEDIR</td><td>ISX_DEFAULTCOMPONENT7</td></row>
+		<row><td>ESRI1</td><td>ISX_DEFAULTCOMPONENT6</td></row>
 		<row><td>IFORMBUILDER</td><td>ISX_DEFAULTCOMPONENT3</td></row>
 		<row><td>PersonalFolder</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 	</table>
@@ -1150,7 +1150,6 @@
 		<row><td>ALLUSERSPROFILE</td><td>TARGETDIR</td><td>.:ALLUSE~1|All Users</td><td/><td>0</td><td/></row>
 		<row><td>ARCGIS</td><td>CommonFilesFolder</td><td>ArcGIS</td><td/><td>0</td><td/></row>
 		<row><td>ARCGIS1</td><td>CommonAppDataFolder</td><td>ArcGIS</td><td/><td>0</td><td/></row>
-		<row><td>ARCGIS2</td><td>ALLUSERSPROFILE</td><td>ArcGIS</td><td/><td>0</td><td/></row>
 		<row><td>AdminToolsFolder</td><td>TARGETDIR</td><td>.:Admint~1|AdminTools</td><td/><td>0</td><td/></row>
 		<row><td>AppDataFolder</td><td>TARGETDIR</td><td>.:APPLIC~1|Application Data</td><td/><td>0</td><td/></row>
 		<row><td>BIN</td><td>ARCGIS</td><td>Bin</td><td/><td>0</td><td/></row>
@@ -1160,11 +1159,12 @@
 		<row><td>DATABASEDIR</td><td>ISYourDataBaseDir</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>DesktopFolder</td><td>TARGETDIR</td><td>.:Desktop</td><td/><td>3</td><td/></row>
 		<row><td>ESRI</td><td>ProgramFilesFolder</td><td>Esri</td><td/><td>0</td><td/></row>
+		<row><td>ESRI1</td><td>CommonFilesFolder</td><td>ESRI</td><td/><td>0</td><td/></row>
 		<row><td>FavoritesFolder</td><td>TARGETDIR</td><td>.:FAVORI~1|Favorites</td><td/><td>0</td><td/></row>
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
 		<row><td>GlobalAssemblyCache</td><td>TARGETDIR</td><td>.:Global~1|GlobalAssemblyCache</td><td/><td>0</td><td/></row>
 		<row><td>IFORMBUILDER</td><td>ProgramFilesFolder</td><td>IFORMB~1|iFormBuilder</td><td/><td>0</td><td/></row>
-		<row><td>IFORMBUILDER1</td><td>ARCGIS2</td><td>IFORMB~1|iFormBuilder</td><td/><td>0</td><td/></row>
+		<row><td>IFORMBUILDER1</td><td>ESRI1</td><td>IFORMB~1|iFormBuilder</td><td/><td>0</td><td/></row>
 		<row><td>IFORMBUILDER_DOWNLOAD_TOOLS</td><td>IFORMBUILDER</td><td>IFORMB~1|iFormBuilder Download Tools</td><td/><td>0</td><td/></row>
 		<row><td>INSTALLDIR</td><td>IFORMBUILDER_DOWNLOAD_TOOLS</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>ISCommonFilesFolder</td><td>CommonFilesFolder</td><td>Instal~1|InstallShield</td><td/><td>0</td><td/></row>
@@ -1888,10 +1888,10 @@
 		<row><td>AlwaysInstall</td><td>ArcGISTools.Primary_output</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
-		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT2</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT3</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT4</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT5</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT6</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT7</td></row>
 		<row><td>AlwaysInstall</td><td>iFormBuilderAPI.Primary_output</td></row>
 		<row><td>AlwaysInstall</td><td>iFormGPTools.Primary_output</td></row>
@@ -1913,17 +1913,18 @@
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
 		<row><td>arcgistools.primary_output</td><td>ArcGISTools.Primary_output</td><td>ArcGISTools.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ArcGISTools1&gt;|Built</td><td>3</td><td/></row>
+		<row><td>config.xml</td><td>ISX_DEFAULTCOMPONENT4</td><td>config.xml</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder\iformbuilder tools\config.xml</td><td>1</td><td/></row>
 		<row><td>iformbuilder.docx</td><td>ISX_DEFAULTCOMPONENT4</td><td>IFORMB~1.DOC|iFormBuilder.docx</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder\iFormBuilder src\Documentation\iFormBuilder.docx</td><td>1</td><td/></row>
 		<row><td>iformbuilder_add_in.localize</td><td>iFormbuilder_Add_In.Localized_resources</td><td>iFormbuilder Add In.Localized resources</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormbuilder Add In&gt;|LocalizedResourceDlls</td><td>3</td><td/></row>
 		<row><td>iformbuilder_add_in.primary_</td><td>iFormbuilder_Add_In.Primary_output</td><td>iFormbuilder Add In.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormbuilder Add In&gt;|Built</td><td>3</td><td/></row>
 		<row><td>iformbuilderapi.primary_outp</td><td>iFormBuilderAPI.Primary_output</td><td>iFormBuilderAPI.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormBuilderAPI&gt;|Built</td><td>3</td><td/></row>
 		<row><td>iformgptools.primary_output</td><td>iFormGPTools.Primary_output</td><td>iFormGPTools.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormGPTools1&gt;|Built</td><td>3</td><td/></row>
-		<row><td>iformtoolbar.esriaddin</td><td>ISX_DEFAULTCOMPONENT</td><td>IFORMT~1.ESR|iFormToolbar.esriAddIn</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder\iFormBuilder src\iFormbuilder Addin\bin\Release\iFormToolbar.esriAddIn</td><td>1</td><td/></row>
+		<row><td>iformtoolbar.esriaddin</td><td>ISX_DEFAULTCOMPONENT</td><td>IFORMT~1.ESR|iFormToolbar.esriAddIn</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Project Work\iFormEsriIntegration\iFormBuilder\iFormBuilder src\iFormbuilder Addin\bin\Release\iFormToolbar.esriAddIn</td><td>1</td><td/></row>
 		<row><td>iformtools.primary_output</td><td>iFormTools.Primary_output</td><td>iFormTools.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormTools1&gt;|Built</td><td>3</td><td/></row>
-		<row><td>iformtools.tbx3</td><td>ISX_DEFAULTCOMPONENT4</td><td>IFORMT~1.TBX|iFormTools.tbx</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\ArcGIS\iformbuilder\iFormTools.tbx</td><td>1</td><td/></row>
+		<row><td>iformtools.tbx</td><td>ISX_DEFAULTCOMPONENT4</td><td>IFORMT~1.TBX|iFormTools.tbx</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder\iformbuilder tools\iFormTools.tbx</td><td>1</td><td/></row>
 		<row><td>register.bat</td><td>ISX_DEFAULTCOMPONENT</td><td>Register.bat</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder\iformbuilder tools\Register.bat</td><td>1</td><td/></row>
 		<row><td>setting_up_the_configuration</td><td>ISX_DEFAULTCOMPONENT4</td><td>SETTIN~1.DOC|Setting Up the Configuration File.docx</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder\iFormBuilder src\Documentation\Setting Up the Configuration File.docx</td><td>1</td><td/></row>
-		<row><td>template.mxd3</td><td>ISX_DEFAULTCOMPONENT4</td><td>Template.mxd</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\ArcGIS\iformbuilder\Template.mxd</td><td>1</td><td/></row>
+		<row><td>template.mxd</td><td>ISX_DEFAULTCOMPONENT4</td><td>Template.mxd</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder\iformbuilder tools\Template.mxd</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2183,10 +2184,10 @@
 		<row><td>ArcGISTools.Primary_output</td><td/><td/><td>_496ED1FA_829D_4DA0_85A2_49B832F59A10_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_14D84E89_A6A2_4EA2_B026_691A02155D85_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_0B67D414_F484_4AE9_A20B_7FB4126C633E_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>ISX_DEFAULTCOMPONENT2</td><td/><td/><td>_AB594999_3FD8_43C7_B981_2F21D521D6B5_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT3</td><td/><td/><td>_77AC15EB_D16B_4344_B54F_EE453CF00F5D_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td/><td/><td>_6BF5DBD6_8948_46AB_9F02_1DAE64954204_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT5</td><td/><td/><td>_ABE658AC_2267_42CD_836A_4300F7B177BA_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT6</td><td/><td/><td>_D5A175F6_BDEE_484B_A8D2_95BACD239A7B_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT7</td><td/><td/><td>_195C54A9_ECEF_481F_BA62_06940ADA57F1_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>iFormBuilderAPI.Primary_output</td><td/><td/><td>_14CD4BFD_1D9C_4169_93A9_C00FB5F62D0F_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>iFormGPTools.Primary_output</td><td/><td/><td>_23AC0F66_C52A_4D08_BD2F_C542ABDED96A_FILTER</td><td/><td/><td/><td/></row>

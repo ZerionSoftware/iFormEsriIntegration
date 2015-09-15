@@ -16,6 +16,16 @@ namespace iFormBuilderAPI
             _iFormConfig = new Configuration();
         }
 
+        public AccessCode GetAccessCodeWithSecretKey(string clientid, string secretkey, string serverurl)
+        {
+            _iFormConfig.clientid = clientid;
+            _iFormConfig.secretkey = secretkey;
+            _iFormConfig.iformserverurl = serverurl;
+
+
+            return this.GetAccessCode();
+        }
+
         public AccessCode GetAccessCode(string clientid, string refreshcode, string serverurl)
         {
             _iFormConfig.clientid = clientid;
@@ -23,6 +33,13 @@ namespace iFormBuilderAPI
             _iFormConfig.iformserverurl = serverurl;
             return this.GetAccessCode();
         }
+
+        public AccessCode GetAccessToken()
+        {
+            AccessCode access = new AccessCode(); //(AccessCode)jsonSerializer.ReadObject(webResponse.GetResponseStream());
+            return access;
+        }
+
         /// <summary>
         /// Retrive the access code used to handle interactions with iFormBuilder site
         /// </summary>

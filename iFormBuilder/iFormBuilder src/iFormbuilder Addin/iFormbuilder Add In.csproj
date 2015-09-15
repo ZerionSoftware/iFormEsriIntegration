@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>iFormToolbar</RootNamespace>
     <AssemblyName>iFormToolbar</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -335,6 +335,6 @@
     <VisualStudio />
   </ProjectExtensions>
   <PropertyGroup>
-    <PostBuildEvent>REM "C:\Program Files (x86)\Common Files\ArcGIS\bin\ESRIRegAddin.exe" ""$(ProjectDir)\$(OutDir)\iFormToolbar.esriAddIn"</PostBuildEvent>
+    <PostBuildEvent>REM "C:\Program Files (x86)\Common Files\ArcGIS\bin\ESRIRegAddin.exe" "C:\Project Work\iFormEsriIntegration\iFormBuilder\iFormBuilder src\iFormbuilder Addin\bin\Debug\iFormToolbar.esriAddIn"</PostBuildEvent>
   </PropertyGroup>
 </Project>

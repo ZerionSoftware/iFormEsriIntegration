@@ -37,6 +37,13 @@ namespace iFormBuilderAPI
             get { return _refreshcode; }
         }
 
+        private string _secretkey;
+        public string secretkey
+        {
+            set { _secretkey = value; }
+            get { return _secretkey; }
+        }
+
         private string _iformusername;
         public string iformusername
         {
@@ -87,44 +94,52 @@ namespace iFormBuilderAPI
 
         internal bool ReadConfiguration(string path)
         {
-            XmlDocument doc = new XmlDocument();
-            doc.Load(path);
-            XmlNode node = doc.SelectSingleNode("config");
-            foreach (XmlNode children in node.ChildNodes)
+            try
             {
-                switch (children.Name)
+                XmlDocument doc = new XmlDocument();
+                doc.Load(path);
+                XmlNode node = doc.SelectSingleNode("config");
+                foreach (XmlNode children in node.ChildNodes)
                 {
-                    case "clientid":
-                        this.clientid = children.InnerText;
-                        break;
-                    case "refreshcode":
-                        this.refreshcode = children.InnerText;
-                        break;
-                    case "iformserverurl":
-                        this.iformserverurl = children.InnerText;
-                        break;
-                    case "iformusername":
-                        this.iformusername = children.InnerText;
-                        break;
-                    case "iformpassword":
-                        this.iformpassword = children.InnerText;
-                        break;
-                    case "profileid":
-                        this.profileid = int.Parse(children.InnerText);
-                        break;
-                    case "arcgisurl":
-                        this._arcgisurl = children.InnerText;
-                        break;
-                    case "arcgisusername":
-                        this._arcgisusername = children.InnerText;
-                        break;
-                    case "arcgispassword":
-                        this.arcgispassword = children.InnerText;
-                        break;
+                    switch (children.Name)
+                    {
+                        case "clientid":
+                            this.clientid = children.InnerText;
+                            break;
+                        case "refreshcode":
+                            this.refreshcode = children.InnerText;
+                            break;
+                        case "secretkey":
+                            this.secretkey = children.InnerText;
+                            break;
+                        case "iformserverurl":
+                            this.iformserverurl = children.InnerText;
+                            break;
+                        case "iformusername":
+                            this.iformusername = children.InnerText;
+                            break;
+                        case "iformpassword":
+                            this.iformpassword = children.InnerText;
+                            break;
+                        case "profileid":
+                            this.profileid = int.Parse(children.InnerText);
+                            break;
+                        case "arcgisurl":
+                            this._arcgisurl = children.InnerText;
+                            break;
+                        case "arcgisusername":
+                            this._arcgisusername = children.InnerText;
+                            break;
+                        case "arcgispassword":
+                            this.arcgispassword = children.InnerText;
+                            break;
+                    }
                 }
+                string URI = node.InnerText;
+                return true;
             }
-            string URI = node.InnerText;
-            return true;
+            catch
+            { return false; }
         }
 
         internal bool SaveConfiguration(string path)

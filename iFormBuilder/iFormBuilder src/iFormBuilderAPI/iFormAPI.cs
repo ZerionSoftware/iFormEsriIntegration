@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
+using System.Security.Cryptography;
 using System.Text;
 //using System.Threading.Tasks;
 using iFormBuilderAPI.DataContractObjects;
@@ -328,6 +329,7 @@ namespace iFormBuilderAPI
             iFormBuilderStatus access = (iFormBuilderStatus)jsonSerializer.ReadObject(request.GetResponseStream());
             return access.STATUS;
         }
+
         private AccessCode _code {get; set;}
         public AccessCode accesscode
         {
@@ -335,16 +337,31 @@ namespace iFormBuilderAPI
             {
                 if (_code == null || _code.isExpired)
                 {
-                    string opts = "client_id=" + iformconfig.clientid + "&code=" + iformconfig.refreshcode + "&grant_type=refresh_token";
                     string requesturl = "https://" + iformconfig.iformserverurl + ".iformbuilder.com/exzact/api/oauth/token";
-                    // parameters: name1=value1&name2=value2	
+                    string opts = string.Empty;
+                    if (iformconfig.refreshcode.Length == 0)
+                    {
+                        //Get the Code using the Secret Key
+                        string jwt = CreateJWT(iformconfig.secretkey, iformconfig.clientid, requesturl, 300);
+                        Console.Write(jwt);
+                        opts = string.Format("grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion={0}", jwt);
+                    }
+                    else
+                    {
+                        opts = "client_id=" + iformconfig.clientid + "&code=" + iformconfig.refreshcode + "&grant_type=refresh_token";
+                    }
+
+                    if (opts == String.Empty)
+                        return null;
+
                     WebRequest webRequest = WebRequest.Create(requesturl);
                     webRequest.Method = "POST";
                     Stream os = null;
                     try
                     {
                         webRequest.ContentType = "application/x-www-form-urlencoded";
-                        byte[] bytes = Encoding.ASCII.GetBytes(opts);
+                        //byte[] bytes = Encoding.ASCII.GetBytes(opts);
+                        byte[] bytes = Encoding.UTF8.GetBytes(opts);
                         webRequest.ContentLength = bytes.Length;   //Count bytes to send
                         os = webRequest.GetRequestStream();
                         os.Write(bytes, 0, bytes.Length);         //Send it
@@ -363,12 +380,64 @@ namespace iFormBuilderAPI
                     WebResponse webResponse = webRequest.GetResponse();
                     DataContractJsonSerializer jsonSerializer = new DataContractJsonSerializer(typeof(AccessCode));
                     _code = (AccessCode)jsonSerializer.ReadObject(webResponse.GetResponseStream());
+                    return _code;
                 }
-
-                return _code;
+                else
+                    return _code;
             }
             set { _code = value; }
         }
+
+        private string CreateJWT(string clientsecret,string clientkey,string clienturl, long expiration)
+        {
+            //Dim JWT As String
+            //Dim EncodedJWT As Byte()
+            String JWT;
+            byte[] EncodedJWT;
+            char q = (char)34;
+
+            //Build Header and Claim Set String
+            String strHeader = "{'alg':'HS256','typ':'JWT'}".Replace("'", q.ToString());
+            TimeSpan timespan = DateTime.Now.ToUniversalTime().Subtract(new DateTime(1970, 1, 1));
+            long iat =  timespan.Ticks / 10000000;
+            long exp = iat + expiration;
+            string strClaimSet = ("{" + string.Format("'iss':'{0}','aud':'{1}','exp':{2},'iat':{3}", clientkey, clienturl, exp.ToString(), iat.ToString()) + "}").Replace("'", q.ToString());
+
+            //Build JWT String
+            string headerBytes = ToBase64URL(strHeader);
+            var claimerBytes = ToBase64URL(strClaimSet);
+            JWT = string.Format("{0}.{1}", headerBytes, claimerBytes);
+
+            //Convert Client Secret to UTF8 Byte()
+            byte[] bytKey = System.Text.Encoding.UTF8.GetBytes(clientsecret);
+
+            //Encode JWT String
+            HMACSHA256 hmac_encode = new HMACSHA256(bytKey);
+            EncodedJWT = hmac_encode.ComputeHash(System.Text.Encoding.UTF8.GetBytes(JWT));
+
+            //Sign and return JWT
+            String signature =  ToBase64URL(EncodedJWT);
+            return string.Format("{0}.{1}", JWT, signature);
+        }
+
+
+        string ToBase64URL(string text)
+        {
+            byte[] b = System.Text.Encoding.UTF8.GetBytes(text);
+            return ToBase64URL(b);
+        }
+
+
+    string ToBase64URL(byte[] byt)
+    {
+        string result = string.Empty;
+        //Convert to base 64 string
+        result = Convert.ToBase64String(byt);
+        //Make URL Friendly
+        result = result.Replace("+", "-").Replace("/", "_").Replace("=","");
+        Console.WriteLine(result.IndexOf("="));
+        return result;
+      }
 
         public bool ReadConfiguration(string path)
         {

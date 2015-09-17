@@ -13,7 +13,6 @@ using ESRI.ArcGIS.CatalogUI;
 using ESRI.ArcGIS.Catalog;
 using ESRI.ArcGIS.Geodatabase;
 using iFormToolbar.Properties;
-using Microsoft.Win32.TaskScheduler;
 
 namespace iFormToolbar
 {
@@ -237,7 +236,7 @@ namespace iFormToolbar
         {
             //A Workspace will only be created a File Geodatabase
             String fileName = DateTime.Now.ToFileTimeUtc().ToString();
-            IWorkspace workspace = ArcGISTools.Utilities.CreateWorkspace(Utilities.iFormFolder, fileName);
+            IWorkspace workspace = ArcGISTools.Utilities.CreateWorkspace(Utilities.iFormTempFolder, fileName);
             this.label10.Text = workspace.PathName;
         }
 

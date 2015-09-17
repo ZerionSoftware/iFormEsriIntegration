@@ -251,8 +251,8 @@
 		<col key="yes" def="s72">Name</col>
 		<col def="V0">Data</col>
 		<col def="S255">ISBuildSourcePath</col>
-		<row><td>ISExpHlp.dll</td><td/><td>&lt;ISProductFolder&gt;\redist\language independent\i386\ISExpHlp.dll</td></row>
-		<row><td>ISSELFREG.DLL</td><td/><td>&lt;ISProductFolder&gt;\redist\language independent\i386\isregsvr.dll</td></row>
+		<row><td>ISExpHlp.dll</td><td/><td>&lt;ISRedistPlatformDependentFolder&gt;\ISExpHlp.dll</td></row>
+		<row><td>ISSELFREG.DLL</td><td/><td>&lt;ISRedistPlatformDependentFolder&gt;\isregsvr.dll</td></row>
 		<row><td>NewBinary1</td><td/><td>&lt;ISProductFolder&gt;\Support\Themes\InstallShield Blue Theme\banner.jpg</td></row>
 		<row><td>NewBinary10</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\CompleteSetupIco.ibd</td></row>
 		<row><td>NewBinary11</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\CustomSetupIco.ibd</td></row>
@@ -271,7 +271,7 @@
 		<row><td>NewBinary7</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\ReinstIco.ibd</td></row>
 		<row><td>NewBinary8</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\RemoveIco.ibd</td></row>
 		<row><td>NewBinary9</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\SetupIcon.ibd</td></row>
-		<row><td>SetAllUsers.dll</td><td/><td>&lt;ISProductFolder&gt;\redist\language independent\i386\SetAllUsers.dll</td></row>
+		<row><td>SetAllUsers.dll</td><td/><td>&lt;ISRedistPlatformDependentFolder&gt;\SetAllUsers.dll</td></row>
 	</table>
 
 	<table name="BindImage">
@@ -343,11 +343,14 @@
 		<row><td>ArcGISTools.Primary_output</td><td>{0323B471-0ACB-435C-90DA-5369BBD782E6}</td><td>INSTALLDIR</td><td>2</td><td/><td>arcgistools.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{B0D6C1E3-755B-48A4-93FA-9A3B98B22BB9}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{822C8D23-2A96-484F-A740-685BFBFAD47D}</td><td>PersonalFolder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT2</td><td>{5C2E458C-2A5D-4EC0-A4DA-D0EC0F2CD84E}</td><td>PYTHON_TOOLS</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{A5C7D590-0B64-46E2-BB13-2C111708272F}</td><td>IFORMBUILDER</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td>{4942A89C-D497-4430-BB38-E2C1A7B0FAC5}</td><td>IFORMBUILDER1</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT5</td><td>{C82D9F07-1332-40AB-AC96-6A49B78C5824}</td><td>ALLUSERSPROFILE</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT6</td><td>{9F038D5F-AB54-43ED-BD28-258B25AC0887}</td><td>ESRI1</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT7</td><td>{45CCC2FF-3E8E-4C67-B065-6CA07F2CE60C}</td><td>DATABASEDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT8</td><td>{4B6C6F38-93F2-4882-B8FA-A203A9B6E871}</td><td>PYTHON_TOOLS</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT9</td><td>{405595BD-E2F1-4EBE-BC1B-F03662DA34D7}</td><td>CommonAppDataFolder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>iFormBuilderAPI.Primary_output</td><td>{4C55B82B-44AF-4A33-9F01-F38E0A1F0977}</td><td>INSTALLDIR</td><td>2</td><td/><td>iformbuilderapi.primary_outp</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>iFormGPTools.Primary_output</td><td>{A89BCE4F-D89D-4BC3-8D55-386849B19AC4}</td><td>INSTALLDIR</td><td>2</td><td/><td>iformgptools.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>iFormTools.Primary_output</td><td>{34C6AA56-B726-4945-8E26-968EF2AEED79}</td><td>INSTALLDIR</td><td>2</td><td/><td>iformtools.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
@@ -1064,9 +1067,16 @@
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>ALLUSERSPROFILE</td><td>ISX_DEFAULTCOMPONENT5</td></row>
+		<row><td>CommonAppDataFolder</td><td>ISX_DEFAULTCOMPONENT9</td></row>
 		<row><td>DATABASEDIR</td><td>ISX_DEFAULTCOMPONENT7</td></row>
 		<row><td>ESRI1</td><td>ISX_DEFAULTCOMPONENT6</td></row>
 		<row><td>IFORMBUILDER</td><td>ISX_DEFAULTCOMPONENT3</td></row>
+		<row><td>IFORMBUILDER1</td><td>ISX_DEFAULTCOMPONENT4</td></row>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT2</td></row>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT8</td></row>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT9</td></row>
+		<row><td>PYTHON_TOOLS</td><td>ISX_DEFAULTCOMPONENT2</td></row>
+		<row><td>PYTHON_TOOLS</td><td>ISX_DEFAULTCOMPONENT8</td></row>
 		<row><td>PersonalFolder</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 	</table>
 
@@ -1088,6 +1098,7 @@
 		<row><td>SetARPINSTALLLOCATION</td><td>51</td><td>ARPINSTALLLOCATION</td><td>[INSTALLDIR]</td><td/><td/></row>
 		<row><td>SetAllUsersProfileNT</td><td>51</td><td>ALLUSERSPROFILE</td><td>[%SystemRoot]\Profiles\All Users</td><td/><td/></row>
 		<row><td>ShowMsiLog</td><td>226</td><td>SystemFolder</td><td>[SystemFolder]notepad.exe "[MsiLogFileLocation]"</td><td/><td>Shows Property-driven MSI Log</td></row>
+		<row><td>Unregister</td><td>1058</td><td>INSTALLDIR</td><td>[INSTALLDIR]Unregister.bat</td><td/><td/></row>
 		<row><td>setAllUsersProfile2K</td><td>51</td><td>ALLUSERSPROFILE</td><td>[%ALLUSERSPROFILE]</td><td/><td/></row>
 		<row><td>setUserProfileNT</td><td>51</td><td>USERPROFILE</td><td>[%USERPROFILE]</td><td/><td/></row>
 	</table>
@@ -1155,11 +1166,12 @@
 		<row><td>BIN</td><td>ARCGIS</td><td>Bin</td><td/><td>0</td><td/></row>
 		<row><td>BIN1</td><td>ARCGIS1</td><td>bin</td><td/><td>0</td><td/></row>
 		<row><td>CommonAppDataFolder</td><td>TARGETDIR</td><td>.:Common~1|CommonAppData</td><td/><td>0</td><td/></row>
+		<row><td>CommonFiles64Folder</td><td>TARGETDIR</td><td>.:Common64</td><td/><td>0</td><td/></row>
 		<row><td>CommonFilesFolder</td><td>TARGETDIR</td><td>.:Common</td><td/><td>0</td><td/></row>
 		<row><td>DATABASEDIR</td><td>ISYourDataBaseDir</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>DesktopFolder</td><td>TARGETDIR</td><td>.:Desktop</td><td/><td>3</td><td/></row>
 		<row><td>ESRI</td><td>ProgramFilesFolder</td><td>Esri</td><td/><td>0</td><td/></row>
-		<row><td>ESRI1</td><td>CommonFilesFolder</td><td>ESRI</td><td/><td>0</td><td/></row>
+		<row><td>ESRI1</td><td>CommonAppDataFolder</td><td>ESRI</td><td/><td>0</td><td/></row>
 		<row><td>FavoritesFolder</td><td>TARGETDIR</td><td>.:FAVORI~1|Favorites</td><td/><td>0</td><td/></row>
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
 		<row><td>GlobalAssemblyCache</td><td>TARGETDIR</td><td>.:Global~1|GlobalAssemblyCache</td><td/><td>0</td><td/></row>
@@ -1176,10 +1188,14 @@
 		<row><td>MyPicturesFolder</td><td>TARGETDIR</td><td>.:MyPict~1|MyPictures</td><td/><td>0</td><td/></row>
 		<row><td>NEW_DIRECTORY1</td><td>TARGETDIR</td><td>NEW_DIRECTORY1</td><td/><td>0</td><td/></row>
 		<row><td>NEW_DIRECTORY2</td><td>TARGETDIR</td><td>NEW_DIRECTORY2</td><td/><td>0</td><td/></row>
+		<row><td>NEW_DIRECTORY3</td><td>TARGETDIR</td><td>NEW_DIRECTORY3</td><td/><td>0</td><td/></row>
+		<row><td>NEW_FOLDER_1</td><td>TARGETDIR</td><td>NEW_FOLDER_1</td><td/><td>0</td><td/></row>
 		<row><td>NetHoodFolder</td><td>TARGETDIR</td><td>.:NetHood</td><td/><td>0</td><td/></row>
+		<row><td>PYTHON_TOOLS</td><td>IFORMBUILDER1</td><td>PYTHON~1|Python Tools</td><td/><td>0</td><td/></row>
 		<row><td>PersonalFolder</td><td>TARGETDIR</td><td>.:Personal</td><td/><td>0</td><td/></row>
 		<row><td>PrimaryVolumePath</td><td>TARGETDIR</td><td>.:Primar~1|PrimaryVolumePath</td><td/><td>0</td><td/></row>
 		<row><td>PrintHoodFolder</td><td>TARGETDIR</td><td>.:PRINTH~1|PrintHood</td><td/><td>0</td><td/></row>
+		<row><td>ProgramFiles64Folder</td><td>TARGETDIR</td><td>.:Prog64~1|Program Files 64</td><td/><td>0</td><td/></row>
 		<row><td>ProgramFilesFolder</td><td>TARGETDIR</td><td>.:PROGRA~1|program files</td><td/><td>0</td><td/></row>
 		<row><td>ProgramMenuFolder</td><td>TARGETDIR</td><td>.:Programs</td><td/><td>3</td><td/></row>
 		<row><td>RecentFolder</td><td>TARGETDIR</td><td>.:Recent</td><td/><td>0</td><td/></row>
@@ -1187,6 +1203,7 @@
 		<row><td>StartMenuFolder</td><td>TARGETDIR</td><td>.:STARTM~1|Start Menu</td><td/><td>3</td><td/></row>
 		<row><td>StartupFolder</td><td>TARGETDIR</td><td>.:StartUp</td><td/><td>3</td><td/></row>
 		<row><td>System16Folder</td><td>TARGETDIR</td><td>.:System</td><td/><td>0</td><td/></row>
+		<row><td>System64Folder</td><td>TARGETDIR</td><td>.:System64</td><td/><td>0</td><td/></row>
 		<row><td>SystemFolder</td><td>TARGETDIR</td><td>.:System32</td><td/><td>0</td><td/></row>
 		<row><td>TARGETDIR</td><td/><td>SourceDir</td><td/><td>0</td><td/></row>
 		<row><td>TempFolder</td><td>TARGETDIR</td><td>.:Temp</td><td/><td>0</td><td/></row>
@@ -1888,11 +1905,14 @@
 		<row><td>AlwaysInstall</td><td>ArcGISTools.Primary_output</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT2</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT3</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT4</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT5</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT6</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT7</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT8</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT9</td></row>
 		<row><td>AlwaysInstall</td><td>iFormBuilderAPI.Primary_output</td></row>
 		<row><td>AlwaysInstall</td><td>iFormGPTools.Primary_output</td></row>
 		<row><td>AlwaysInstall</td><td>iFormTools.Primary_output</td></row>
@@ -1913,18 +1933,22 @@
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
 		<row><td>arcgistools.primary_output</td><td>ArcGISTools.Primary_output</td><td>ArcGISTools.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ArcGISTools1&gt;|Built</td><td>3</td><td/></row>
-		<row><td>config.xml</td><td>ISX_DEFAULTCOMPONENT4</td><td>config.xml</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder\iformbuilder tools\config.xml</td><td>1</td><td/></row>
-		<row><td>iformbuilder.docx</td><td>ISX_DEFAULTCOMPONENT4</td><td>IFORMB~1.DOC|iFormBuilder.docx</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder\iFormBuilder src\Documentation\iFormBuilder.docx</td><td>1</td><td/></row>
+		<row><td>config.xml</td><td>ISX_DEFAULTCOMPONENT4</td><td>config.xml</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Projects\iFormEsriIntegration\iFormBuilder\iformbuilder tools\config.xml</td><td>1</td><td/></row>
+		<row><td>create_hosted_feature.py</td><td>ISX_DEFAULTCOMPONENT8</td><td>CREATE~1.PY|Create Hosted Feature.py</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Projects\iFormEsriIntegration\iFormBuilder\iformbuilder tools\Python Tools\Create Hosted Feature.py</td><td>1</td><td/></row>
+		<row><td>create_sd_file_for_arcgis_on</td><td>ISX_DEFAULTCOMPONENT8</td><td>CREATE~1.PY|Create SD File for ArcGIS Online.py</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Projects\iFormEsriIntegration\iFormBuilder\iformbuilder tools\Python Tools\Create SD File for ArcGIS Online.py</td><td>1</td><td/></row>
+		<row><td>iformbuilder.docx</td><td>ISX_DEFAULTCOMPONENT4</td><td>IFORMB~1.DOC|iFormBuilder.docx</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Projects\iFormEsriIntegration\iFormBuilder\iFormBuilder src\Documentation\iFormBuilder.docx</td><td>1</td><td/></row>
 		<row><td>iformbuilder_add_in.localize</td><td>iFormbuilder_Add_In.Localized_resources</td><td>iFormbuilder Add In.Localized resources</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormbuilder Add In&gt;|LocalizedResourceDlls</td><td>3</td><td/></row>
 		<row><td>iformbuilder_add_in.primary_</td><td>iFormbuilder_Add_In.Primary_output</td><td>iFormbuilder Add In.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormbuilder Add In&gt;|Built</td><td>3</td><td/></row>
 		<row><td>iformbuilderapi.primary_outp</td><td>iFormBuilderAPI.Primary_output</td><td>iFormBuilderAPI.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormBuilderAPI&gt;|Built</td><td>3</td><td/></row>
 		<row><td>iformgptools.primary_output</td><td>iFormGPTools.Primary_output</td><td>iFormGPTools.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormGPTools1&gt;|Built</td><td>3</td><td/></row>
-		<row><td>iformtoolbar.esriaddin</td><td>ISX_DEFAULTCOMPONENT</td><td>IFORMT~1.ESR|iFormToolbar.esriAddIn</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Project Work\iFormEsriIntegration\iFormBuilder\iFormBuilder src\iFormbuilder Addin\bin\Release\iFormToolbar.esriAddIn</td><td>1</td><td/></row>
+		<row><td>iformtoolbar.esriaddin</td><td>ISX_DEFAULTCOMPONENT</td><td>IFORMT~1.ESR|iFormToolbar.esriAddIn</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Projects\iFormEsriIntegration\iFormBuilder\iFormBuilder src\iFormbuilder Addin\bin\Release\iFormToolbar.esriAddIn</td><td>1</td><td/></row>
 		<row><td>iformtools.primary_output</td><td>iFormTools.Primary_output</td><td>iFormTools.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;iFormTools1&gt;|Built</td><td>3</td><td/></row>
-		<row><td>iformtools.tbx</td><td>ISX_DEFAULTCOMPONENT4</td><td>IFORMT~1.TBX|iFormTools.tbx</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder\iformbuilder tools\iFormTools.tbx</td><td>1</td><td/></row>
-		<row><td>register.bat</td><td>ISX_DEFAULTCOMPONENT</td><td>Register.bat</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder\iformbuilder tools\Register.bat</td><td>1</td><td/></row>
-		<row><td>setting_up_the_configuration</td><td>ISX_DEFAULTCOMPONENT4</td><td>SETTIN~1.DOC|Setting Up the Configuration File.docx</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder\iFormBuilder src\Documentation\Setting Up the Configuration File.docx</td><td>1</td><td/></row>
-		<row><td>template.mxd</td><td>ISX_DEFAULTCOMPONENT4</td><td>Template.mxd</td><td>0</td><td/><td/><td/><td>1</td><td>\\psf\Home\Documents\My Projects\iFormBuilder Tools\iFormEsriIntegration\iFormBuilder\iformbuilder tools\Template.mxd</td><td>1</td><td/></row>
+		<row><td>iformtools.tbx</td><td>ISX_DEFAULTCOMPONENT4</td><td>IFORMT~1.TBX|iFormTools.tbx</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Projects\iFormEsriIntegration\iFormBuilder\iformbuilder tools\iFormTools.tbx</td><td>1</td><td/></row>
+		<row><td>register.bat</td><td>ISX_DEFAULTCOMPONENT</td><td>Register.bat</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Projects\iFormEsriIntegration\iFormBuilder\iformbuilder tools\Register.bat</td><td>1</td><td/></row>
+		<row><td>register.bat1</td><td>ISX_DEFAULTCOMPONENT4</td><td>Register.bat</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Projects\iFormEsriIntegration\iFormBuilder\iformbuilder tools\Register.bat</td><td>1</td><td/></row>
+		<row><td>setting_up_the_configuration</td><td>ISX_DEFAULTCOMPONENT4</td><td>SETTIN~1.DOC|Setting Up the Configuration File.docx</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Projects\iFormEsriIntegration\iFormBuilder\iFormBuilder src\Documentation\Setting Up the Configuration File.docx</td><td>1</td><td/></row>
+		<row><td>template.mxd</td><td>ISX_DEFAULTCOMPONENT4</td><td>Template.mxd</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Projects\iFormEsriIntegration\iFormBuilder\iformbuilder tools\Template.mxd</td><td>1</td><td/></row>
+		<row><td>unregister.bat2</td><td>ISX_DEFAULTCOMPONENT</td><td>UNREGI~1.BAT|Unregister.bat</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Projects\iFormEsriIntegration\iFormBuilder\iformbuilder tools\Unregister.bat</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -1958,119 +1982,6 @@
 		<col def="S72">Font</col>
 		<col def="L72">Title</col>
 		<col def="S72">DisplayName</col>
-	</table>
-
-	<table name="ISCEApp">
-		<col key="yes" def="s50">AppKey</col>
-		<col def="s50">AppName</col>
-		<col def="s200">CompanyName</col>
-		<col def="s50">DefDir</col>
-		<col def="S255">IconPath</col>
-		<col def="I4">IconIndex</col>
-		<col def="S255">DeviceFile</col>
-		<col def="s50">DesktopTargetDir</col>
-		<col def="S255">Description</col>
-		<col def="i2">DeleteMedia</col>
-		<col def="I4">InstallNetCF</col>
-		<col def="I4">InstallSQLServer</col>
-		<col def="I4">InstallSQLClient</col>
-		<col def="I4">InstallSQLDev</col>
-		<col def="S255">PreXML</col>
-		<col def="S255">PostXML</col>
-		<col def="I2">NoUninstall</col>
-		<col def="S255">SPCFile</col>
-		<col def="S255">PVKFile</col>
-		<col def="I4">Attributes</col>
-		<col def="S255">RawDeviceFile</col>
-		<col def="S72">Component_</col>
-		<col def="I4">InstallNetCF2</col>
-		<col def="I4">InstallSQLServer2</col>
-		<col def="I4">InstallSQLClient2</col>
-		<col def="I4">InstallSQLDev2</col>
-		<col def="S255">SPCPwd</col>
-	</table>
-
-	<table name="ISCEDir">
-		<col key="yes" def="s50">AppKey</col>
-		<col key="yes" def="s50">DirKey</col>
-		<col def="s50">DirParent</col>
-		<col def="s255">DirValue</col>
-	</table>
-
-	<table name="ISCEFile">
-		<col key="yes" def="s50">AppKey</col>
-		<col key="yes" def="s50">FileKey</col>
-		<col def="s255">Name</col>
-		<col def="s50">Destination</col>
-		<col def="s255">Source</col>
-		<col def="i4">Processor</col>
-		<col def="i4">Platform</col>
-		<col def="i4">CopyOption</col>
-		<col def="i4">FileOption</col>
-		<col def="I4">AdvancedOptions</col>
-	</table>
-
-	<table name="ISCEFileExt">
-		<col key="yes" def="s50">AppKey</col>
-		<col key="yes" def="s50">ExtKey</col>
-		<col def="s50">FileKey</col>
-		<col def="S255">Description</col>
-		<col def="s50">Extension</col>
-		<col def="i4">IconIndex</col>
-	</table>
-
-	<table name="ISCEInstall">
-		<col key="yes" def="s255">CEInstallKey</col>
-		<col def="s255">CEAppName</col>
-		<col def="s255">CEDesktopDir</col>
-		<col def="s255">CEIniFileKey</col>
-		<col def="s0">CECabs</col>
-		<col def="s0">CEIcoFile</col>
-		<col def="i2">DeleteMedia</col>
-		<col def="S38">Component_</col>
-	</table>
-
-	<table name="ISCEOtherAppCABs">
-		<col key="yes" def="s50">AppKey</col>
-		<col key="yes" def="s50">FileKey</col>
-		<col def="s255">BuildSourcePath</col>
-	</table>
-
-	<table name="ISCERedist">
-		<col key="yes" def="s50">AppKey</col>
-		<col key="yes" def="S50">Name</col>
-		<col def="I4">Platforms</col>
-	</table>
-
-	<table name="ISCERegistry">
-		<col key="yes" def="s50">AppKey</col>
-		<col key="yes" def="s50">RegKey</col>
-		<col def="i4">Root</col>
-		<col def="s255">Key</col>
-		<col def="S255">Name</col>
-		<col def="S0">Value</col>
-		<col def="i4">Processor</col>
-		<col def="i4">Platform</col>
-		<col def="i4">Overwrite</col>
-	</table>
-
-	<table name="ISCESetupFile">
-		<col key="yes" def="s50">AppKey</col>
-		<col key="yes" def="s50">SetupFileKey</col>
-		<col def="s255">Name</col>
-		<col def="s255">Source</col>
-		<col def="i4">Processor</col>
-		<col def="i4">Platform</col>
-	</table>
-
-	<table name="ISCEShtCut">
-		<col key="yes" def="s50">AppKey</col>
-		<col key="yes" def="s50">ShtCutKey</col>
-		<col def="s255">DisplayName</col>
-		<col def="s255">Destination</col>
-		<col def="s50">Target</col>
-		<col def="i4">Platform</col>
-		<col def="S255">StartScreenIcon</col>
 	</table>
 
 	<table name="ISChainPackage">
@@ -2184,11 +2095,14 @@
 		<row><td>ArcGISTools.Primary_output</td><td/><td/><td>_496ED1FA_829D_4DA0_85A2_49B832F59A10_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_14D84E89_A6A2_4EA2_B026_691A02155D85_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_0B67D414_F484_4AE9_A20B_7FB4126C633E_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT2</td><td/><td/><td>_D982C587_92C0_4C33_977D_F72706723288_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT3</td><td/><td/><td>_77AC15EB_D16B_4344_B54F_EE453CF00F5D_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td/><td/><td>_6BF5DBD6_8948_46AB_9F02_1DAE64954204_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT5</td><td/><td/><td>_ABE658AC_2267_42CD_836A_4300F7B177BA_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT6</td><td/><td/><td>_D5A175F6_BDEE_484B_A8D2_95BACD239A7B_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT7</td><td/><td/><td>_195C54A9_ECEF_481F_BA62_06940ADA57F1_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT8</td><td/><td/><td>_CB6E19C3_7FEB_4FD5_8EC6_AA3CB5161DEA_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT9</td><td/><td/><td>_BCD331AD_F7C4_4281_81EB_40FDC7129148_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>iFormBuilderAPI.Primary_output</td><td/><td/><td>_14CD4BFD_1D9C_4169_93A9_C00FB5F62D0F_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>iFormGPTools.Primary_output</td><td/><td/><td>_23AC0F66_C52A_4D08_BD2F_C542ABDED96A_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>iFormTools.Primary_output</td><td/><td/><td>_4F744716_07AB_446C_A904_F83AC1F3BD5F_FILTER</td><td/><td/><td/><td/></row>
@@ -2447,17 +2361,6 @@
 		<col def="I2">IncludeInBuild</col>
 	</table>
 
-	<table name="ISPalmApp">
-		<col key="yes" def="s72">PalmApp</col>
-		<col key="yes" def="s72">Component</col>
-	</table>
-
-	<table name="ISPalmAppFile">
-		<col key="yes" def="s72">PalmApp</col>
-		<col key="yes" def="s72">FileKey</col>
-		<col def="i4">Destination</col>
-	</table>
-
 	<table name="ISPatchConfigImage">
 		<col key="yes" def="S72">PatchConfiguration_</col>
 		<col key="yes" def="s72">UpgradedImage_</col>
@@ -2522,12 +2425,6 @@
 		<row><td>iFormTools</td><td>iForm Tools\iFormTools.csproj</td><td/><td>2</td></row>
 		<row><td>iFormTools1</td><td>..\iForm Tools\iFormTools.csproj</td><td/><td>2</td></row>
 		<row><td>iFormbuilder Add In</td><td>..\iFormbuilder Addin\iFormbuilder Add In.csproj</td><td/><td>2</td></row>
-	</table>
-
-	<table name="ISPowerShellWrap">
-		<col key="yes" def="s72">Action_</col>
-		<col key="yes" def="s72">Name</col>
-		<col def="S0">Value</col>
 	</table>
 
 	<table name="ISProductConfiguration">
@@ -2636,7 +2533,7 @@
 		<row><td>DVD-5</td><td>Express</td><td>0</td><td>http://</td><td>0</td><td>install</td><td>install</td><td>[LocalAppDataFolder]Downloaded Installations</td><td>0</td><td>http://www.installengine.com/Msiengine20</td><td>http://www.installengine.com/Msiengine20</td><td>0</td><td>http://www.installengine.com/cert05/isengine</td><td>0</td><td/><td/><td/><td>3</td><td>http://www.installengine.com/cert05/dotnetfx</td><td>0</td><td>1033</td><td/><td/><td/><td/><td/><td>3</td><td/><td>http://www.installengine.com/Msiengine30</td><td/></row>
 		<row><td>DVD-9</td><td>Express</td><td>0</td><td>http://</td><td>0</td><td>install</td><td>install</td><td>[LocalAppDataFolder]Downloaded Installations</td><td>0</td><td>http://www.installengine.com/Msiengine20</td><td>http://www.installengine.com/Msiengine20</td><td>0</td><td>http://www.installengine.com/cert05/isengine</td><td>0</td><td/><td/><td/><td>3</td><td>http://www.installengine.com/cert05/dotnetfx</td><td>0</td><td>1033</td><td/><td/><td/><td/><td/><td>3</td><td/><td>http://www.installengine.com/Msiengine30</td><td/></row>
 		<row><td>SingleImage</td><td>Express</td><td>0</td><td>http://</td><td>0</td><td>install</td><td>install</td><td>[LocalAppDataFolder]Downloaded Installations</td><td>1</td><td>http://www.installengine.com/Msiengine20</td><td>http://www.installengine.com/Msiengine20</td><td>0</td><td>http://www.installengine.com/cert05/isengine</td><td>0</td><td/><td/><td/><td>3</td><td>http://www.installengine.com/cert05/dotnetfx</td><td>0</td><td>1033</td><td/><td/><td/><td/><td/><td>3</td><td/><td>http://www.installengine.com/Msiengine30</td><td/></row>
-		<row><td>WebDeployment</td><td>Express</td><td>0</td><td>http://</td><td>0</td><td>setup</td><td>Default</td><td>[LocalAppDataFolder]Downloaded Installations</td><td>2</td><td>http://www.Installengine.com/Msiengine20</td><td>http://www.Installengine.com/Msiengine20</td><td>0</td><td>http://www.installengine.com/cert05/isengine</td><td>2</td><td/><td/><td/><td>3</td><td>http://www.installengine.com/cert05/dotnetfx</td><td>0</td><td>1033</td><td/><td/><td/><td/><td/><td>3</td><td/><td>http://www.installengine.com/Msiengine30</td><td/></row>
+		<row><td>WebDeployment</td><td>Express</td><td>0</td><td>http://</td><td>0</td><td>setup</td><td>Default</td><td>[LocalAppDataFolder]Downloaded Installations</td><td>2</td><td>http://www.Installengine.com/Msiengine20</td><td>http://www.Installengine.com/Msiengine20</td><td>0</td><td>http://www.installengine.com/cert05/isengine</td><td>0</td><td/><td/><td/><td>3</td><td>http://www.installengine.com/cert05/dotnetfx</td><td>0</td><td>1033</td><td/><td/><td/><td/><td/><td>3</td><td/><td>http://www.installengine.com/Msiengine30</td><td/></row>
 	</table>
 
 	<table name="ISReleaseProperty">
@@ -2748,7 +2645,7 @@
 		<col def="i2">Attributes</col>
 		<col def="S255">Version</col>
 		<col def="S255">Condition</col>
-		<col def="S72">DisplayName</col>
+		<col def="S0">DisplayName</col>
 	</table>
 
 	<table name="ISSQLScriptImport">
@@ -3642,6 +3539,7 @@
 		<row><td>IDS_PROGMSG_XML_ROLLBACK_FILES</td><td>1033</td><td>Rolling back XML file changes...</td><td>0</td><td/><td>480334230</td></row>
 		<row><td>IDS_PROGMSG_XML_UPDATE_FILE</td><td>1033</td><td>Updating XML file %s...</td><td>0</td><td/><td>480334230</td></row>
 		<row><td>IDS_SETUPEXE_EXPIRE_MSG</td><td>1033</td><td>This setup works until %s. The setup will now exit.</td><td>0</td><td/><td>480334230</td></row>
+		<row><td>IDS_SETUPEXE_LAUNCH_COND_E</td><td>1033</td><td>This setup was built with an evaluation version of InstallShield and can only be launched from setup.exe.</td><td>0</td><td/><td>-1935466097</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>480334230</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>480334230</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>480334230</td></row>
@@ -3999,6 +3897,12 @@
 		<col def="s255">Value</col>
 	</table>
 
+	<table name="ISWSEWrap">
+		<col key="yes" def="s72">Action_</col>
+		<col key="yes" def="s72">Name</col>
+		<col def="S0">Value</col>
+	</table>
+
 	<table name="ISXmlElement">
 		<col key="yes" def="s72">ISXmlElement</col>
 		<col def="s72">ISXmlFile_</col>
@@ -4134,6 +4038,7 @@
 		<row><td>StopServices</td><td>VersionNT</td><td>1900</td><td>StopServices</td><td/></row>
 		<row><td>UnpublishComponents</td><td/><td>1700</td><td>UnpublishComponents</td><td/></row>
 		<row><td>UnpublishFeatures</td><td/><td>1800</td><td>UnpublishFeatures</td><td/></row>
+		<row><td>Unregister</td><td>REMOVE="ALL"</td><td>6405</td><td/><td/></row>
 		<row><td>UnregisterClassInfo</td><td/><td>2700</td><td>UnregisterClassInfo</td><td/></row>
 		<row><td>UnregisterComPlus</td><td/><td>2100</td><td>UnregisterComPlus</td><td/></row>
 		<row><td>UnregisterExtensionInfo</td><td/><td>2800</td><td>UnregisterExtensionInfo</td><td/></row>
@@ -4184,7 +4089,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>SaveAsSchema</td><td/></row>
 		<row><td>SccEnabled</td><td>0</td></row>
 		<row><td>SccPath</td><td>SAK</td></row>
-		<row><td>SchemaVersion</td><td>773</td></row>
+		<row><td>SchemaVersion</td><td>776</td></row>
 		<row><td>Type</td><td>MSIE</td></row>
 		<row><td>VSSccAuxPath</td><td>SAK</td></row>
 		<row><td>VSSccLocalPath</td><td>SAK</td></row>
@@ -4550,7 +4455,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
 		<row><td>ProductCode</td><td>{878442AF-1D91-466F-B92F-C8C8D72A1166}</td><td/></row>
 		<row><td>ProductName</td><td>iFormBuilder Download Tools</td><td/></row>
-		<row><td>ProductVersion</td><td>1.03.0002</td><td/></row>
+		<row><td>ProductVersion</td><td>5.0.0</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
@@ -5068,89 +4973,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISBillBoard</td><td>Title</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>ISBillBoard</td><td>X</td><td>N</td><td>0</td><td>32767</td><td/><td/><td/><td/><td/></row>
 		<row><td>ISBillBoard</td><td>Y</td><td>N</td><td>0</td><td>32767</td><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>AppKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>AppName</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>Attributes</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>CompanyName</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>Component_</td><td>Y</td><td/><td/><td>Component</td><td>1</td><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>DefDir</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>DeleteMedia</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>Description</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>DesktopTargetDir</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>DeviceFile</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>IconIndex</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>IconPath</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>InstallNetCF</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>InstallNetCF2</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>InstallSQLClient</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>InstallSQLClient2</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>InstallSQLDev</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>InstallSQLDev2</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>InstallSQLServer</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>InstallSQLServer2</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>NoUninstall</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>PVKFile</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>PostXML</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>PreXML</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>RawDeviceFile</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>SPCFile</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEApp</td><td>SPCPwd</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEDir</td><td>AppKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEDir</td><td>DirKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEDir</td><td>DirParent</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEDir</td><td>DirValue</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFile</td><td>AdvancedOptions</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFile</td><td>AppKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFile</td><td>CopyOption</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFile</td><td>Destination</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFile</td><td>FileKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFile</td><td>FileOption</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFile</td><td>Name</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFile</td><td>Platform</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFile</td><td>Processor</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFile</td><td>Source</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFileExt</td><td>AppKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFileExt</td><td>Description</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFileExt</td><td>ExtKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFileExt</td><td>Extension</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFileExt</td><td>FileKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEFileExt</td><td>IconIndex</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEInstall</td><td>CEAppName</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEInstall</td><td>CECabs</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEInstall</td><td>CEDesktopDir</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEInstall</td><td>CEIcoFile</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEInstall</td><td>CEIniFileKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEInstall</td><td>CEInstallKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEInstall</td><td>Component_</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEInstall</td><td>DeleteMedia</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEOtherAppCABs</td><td>AppKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEOtherAppCABs</td><td>BuildSourcePath</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEOtherAppCABs</td><td>FileKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCERedist</td><td>AppKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCERedist</td><td>Name</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCERedist</td><td>Platforms</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCERegistry</td><td>AppKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCERegistry</td><td>Key</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCERegistry</td><td>Name</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCERegistry</td><td>Overwrite</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCERegistry</td><td>Platform</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCERegistry</td><td>Processor</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCERegistry</td><td>RegKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCERegistry</td><td>Root</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCERegistry</td><td>Value</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCESetupFile</td><td>AppKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCESetupFile</td><td>Name</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCESetupFile</td><td>Platform</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCESetupFile</td><td>Processor</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCESetupFile</td><td>SetupFileKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCESetupFile</td><td>Source</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEShtCut</td><td>AppKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEShtCut</td><td>Destination</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEShtCut</td><td>DisplayName</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEShtCut</td><td>Platform</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEShtCut</td><td>ShtCutKey</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEShtCut</td><td>StartScreenIcon</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISCEShtCut</td><td>Target</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>ISChainPackage</td><td>DisplayName</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>Display name for the chained package. Used only in the IDE.</td></row>
 		<row><td>ISChainPackage</td><td>ISReleaseFlags</td><td>Y</td><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>ISChainPackage</td><td>InstallCondition</td><td>Y</td><td/><td/><td/><td/><td>Condition</td><td/><td/></row>
@@ -5368,11 +5190,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISObjectProperty</td><td>ObjectName</td><td>Y</td><td/><td/><td>ISObject</td><td>1</td><td>Text</td><td/><td/></row>
 		<row><td>ISObjectProperty</td><td>Property</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td/></row>
 		<row><td>ISObjectProperty</td><td>Value</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td/></row>
-		<row><td>ISPalmApp</td><td>Component</td><td>N</td><td/><td/><td>Component</td><td>1</td><td/><td/><td/></row>
-		<row><td>ISPalmApp</td><td>PalmApp</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISPalmAppFile</td><td>Destination</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>ISPalmAppFile</td><td>FileKey</td><td>N</td><td/><td/><td>File</td><td>1</td><td/><td/><td/></row>
-		<row><td>ISPalmAppFile</td><td>PalmApp</td><td>N</td><td/><td/><td>ISPalmApp</td><td>1</td><td/><td/><td/></row>
 		<row><td>ISPatchConfigImage</td><td>PatchConfiguration_</td><td>Y</td><td/><td/><td>ISPatchConfiguration</td><td>1</td><td>Text</td><td/><td>Foreign key to the ISPatchConfigurationTable</td></row>
 		<row><td>ISPatchConfigImage</td><td>UpgradedImage_</td><td>N</td><td/><td/><td>ISUpgradedImage</td><td>1</td><td>Text</td><td/><td>Foreign key to the ISUpgradedImageTable</td></row>
 		<row><td>ISPatchConfiguration</td><td>Attributes</td><td>Y</td><td/><td/><td/><td/><td/><td/><td>PatchConfiguration attributes</td></row>
@@ -5404,9 +5221,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISPathVariable</td><td>TestValue</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>The test value of the path variable.</td></row>
 		<row><td>ISPathVariable</td><td>Type</td><td>N</td><td/><td/><td/><td/><td/><td>1;2;4;8</td><td>The type of the path variable.</td></row>
 		<row><td>ISPathVariable</td><td>Value</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>The value of the path variable.</td></row>
-		<row><td>ISPowerShellWrap</td><td>Action_</td><td>N</td><td/><td/><td>CustomAction</td><td>1</td><td>Identifier</td><td/><td>Foreign key into CustomAction table</td></row>
-		<row><td>ISPowerShellWrap</td><td>Name</td><td>N</td><td/><td/><td/><td/><td>Text</td><td/><td>Property associated with this Action</td></row>
-		<row><td>ISPowerShellWrap</td><td>Value</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>Value associated with this Property</td></row>
 		<row><td>ISProductConfiguration</td><td>GeneratePackageCode</td><td>Y</td><td/><td/><td/><td/><td>Number</td><td>0;1</td><td>Indicates whether or not to generate a package code.</td></row>
 		<row><td>ISProductConfiguration</td><td>ISProductConfiguration</td><td>N</td><td/><td/><td/><td/><td>Text</td><td/><td>The name of the product configuration.</td></row>
 		<row><td>ISProductConfiguration</td><td>ProductConfigurationFlags</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>Product configuration (release) flags.</td></row>
@@ -5644,6 +5458,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISVirtualShortcut</td><td>Name</td><td>N</td><td/><td/><td/><td/><td>Identifier</td><td/><td>Property name</td></row>
 		<row><td>ISVirtualShortcut</td><td>Shortcut_</td><td>N</td><td/><td/><td>Shortcut</td><td>1</td><td>Identifier</td><td/><td>Foreign key into Shortcut table.</td></row>
 		<row><td>ISVirtualShortcut</td><td>Value</td><td>N</td><td/><td/><td/><td/><td/><td/><td>Property value</td></row>
+		<row><td>ISWSEWrap</td><td>Action_</td><td>N</td><td/><td/><td>CustomAction</td><td>1</td><td>Identifier</td><td/><td>Foreign key into CustomAction table</td></row>
+		<row><td>ISWSEWrap</td><td>Name</td><td>N</td><td/><td/><td/><td/><td>Text</td><td/><td>Property associated with this Action</td></row>
+		<row><td>ISWSEWrap</td><td>Value</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>Value associated with this Property</td></row>
 		<row><td>ISXmlElement</td><td>Content</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>Element contents</td></row>
 		<row><td>ISXmlElement</td><td>ISAttributes</td><td>Y</td><td/><td/><td/><td/><td>Number</td><td/><td>Internal XML element attributes</td></row>
 		<row><td>ISXmlElement</td><td>ISXmlElement</td><td>N</td><td/><td/><td/><td/><td>Identifier</td><td/><td>Primary key, non-localized, internal token for Xml element</td></row>

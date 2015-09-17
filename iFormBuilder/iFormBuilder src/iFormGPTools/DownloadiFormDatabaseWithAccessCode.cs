@@ -88,8 +88,11 @@ namespace ESRI.Solutions.iFormBuilder.GPTools
                     IGPParameterEdit param_ClientServerName = APLGPUtils.CreateParameterEdit("ClientServerName", "Server Name to Download Data From", esriGPParameterDirection.esriGPParameterDirectionInput, esriGPParameterType.esriGPParameterTypeRequired, (IGPDataType)new GPStringTypeClass(), true) as IGPParameterEdit;
                     m_Parameters.Add(param_ClientServerName);
 
-                    IGPParameterEdit param_AccessCode = APLGPUtils.CreateParameterEdit("AccessCode", "iFormBuilder Access Token", esriGPParameterDirection.esriGPParameterDirectionInput, esriGPParameterType.esriGPParameterTypeRequired, (IGPDataType)new GPStringTypeClass(), true) as IGPParameterEdit;
+                    IGPParameterEdit param_AccessCode = APLGPUtils.CreateParameterEdit("SecretKey", "iFormBuilder Secret Key", esriGPParameterDirection.esriGPParameterDirectionInput, esriGPParameterType.esriGPParameterTypeRequired, (IGPDataType)new GPStringTypeClass(), true) as IGPParameterEdit;
                     m_Parameters.Add(param_AccessCode);
+
+                    IGPParameterEdit param_ClientID = APLGPUtils.CreateParameterEdit("ClientId", "iFormBuilder Client ID", esriGPParameterDirection.esriGPParameterDirectionInput, esriGPParameterType.esriGPParameterTypeRequired, (IGPDataType)new GPStringTypeClass(), true) as IGPParameterEdit;
+                    m_Parameters.Add(param_ClientID);
 
                     IGPParameterEdit param_DownloadSubform = APLGPUtils.CreateParameterEdit("DownloadSubform", "Download the Subforms as Feature Class", esriGPParameterDirection.esriGPParameterDirectionInput, esriGPParameterType.esriGPParameterTypeRequired, (IGPDataType)new GPBooleanTypeClass(), true) as IGPParameterEdit;
                     m_Parameters.Add(param_DownloadSubform);
@@ -174,30 +177,30 @@ namespace ESRI.Solutions.iFormBuilder.GPTools
                     message.AddMessage(string.Format("Server ID used will be: {0}", clientServerName));
 
                 gpParameter = (IGPParameter)paramvalues.get_Element(5);
-                string accessCode = gpUtils.UnpackGPValue(gpParameter).GetAsText();
+                string secretKey = gpUtils.UnpackGPValue(gpParameter).GetAsText();
                 if (message != null)
-                    message.AddMessage(string.Format("Access Code used will be: {0}", accessCode));
+                    message.AddMessage(string.Format("Secret Key used will be: {0}", secretKey));
 
                 gpParameter = (IGPParameter)paramvalues.get_Element(6);
+                string clientID = gpUtils.UnpackGPValue(gpParameter).GetAsText();
+                if (message != null)
+                    message.AddMessage(string.Format("Client ID used will be: {0}", clientID));
+
+                gpParameter = (IGPParameter)paramvalues.get_Element(7);
                 bool subformsastables = bool.Parse(gpUtils.UnpackGPValue(gpParameter).GetAsText());
                 if (message != null)
                     message.AddMessage(string.Format("Subforms will be downloaded as Feature Classes: {0}", subformsastables.ToString()));
 
-                gpParameter = (IGPParameter)paramvalues.get_Element(7);
+                gpParameter = (IGPParameter)paramvalues.get_Element(8);
                 int favorranking = int.Parse(gpUtils.UnpackGPValue(gpParameter).GetAsText());
                 if (message != null)
                     message.AddMessage(string.Format("Favor Ranking is: {0}", favorranking.ToString()));
 
 
-                iFormBuilderAPI.iFormBuilder api = new iFormBuilderAPI.iFormBuilder(accessCode,clientServerName,int.Parse(profileID));
-
-                AccessCode ac = new AccessCode();
-                ac.access_token = accessCode;
-                ac.expires_in = 3600;
-                DataDownloader target = new DataDownloader(api.iformconfig,ac); // TODO: Initialize to an appropriate value
+                iFormBuilderAPI.iFormBuilder api = new iFormBuilderAPI.iFormBuilder(secretKey, clientID, clientServerName, int.Parse(profileID));
+                DataDownloader target = new DataDownloader(api.iformconfig,api.accesscode); // TODO: Initialize to an appropriate value
                 string expected = string.Empty; // TODO: Initialize to an appropriate value
                 IWorkspace actual;
-
 
                 if (path.Contains(".gdb") || path.Contains(".sde"))
                 {

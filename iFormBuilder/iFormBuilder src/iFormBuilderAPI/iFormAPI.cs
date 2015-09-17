@@ -35,6 +35,16 @@ namespace iFormBuilderAPI
             iformconfig.iformserverurl = servername;
             iformconfig.profileid = profileid;
         }
+
+        public iFormBuilder(string secretkey,string clientid,string servername, int profileid)
+        {
+            iformconfig = new Configuration();
+            iformconfig.secretkey = secretkey;
+            iformconfig.clientid = clientid;
+            _code = new AccessCode();
+            iformconfig.iformserverurl = servername;
+            iformconfig.profileid = profileid;
+        }
         public iFormBuilder(IConfiguration configuration)
         {
             iformconfig = configuration as Configuration;
@@ -231,33 +241,14 @@ namespace iFormBuilderAPI
         public Records GetRecords(Page page, long highestrecord, int favorranking)
         {
             string datastring = "";
-            //if(SinceDate.Ticks != 0)
-            //   datastring  = string.Format("&SINCE_DATE={0}-{1}-{2}", SinceDate.Year, SinceDate.Month,SinceDate.Day);
-
             //TODO:  Implement Methods for handling the ID parameter.  This will correct issue with Date Slice not being fine grained enough
             if (highestrecord != 0)
                 datastring = string.Format("&SINCE_ID={0}", highestrecord);
 
             //Download the List of IDs to parse
             string requesturl = string.Format("{0}/pages/{1}/feed?FORMAT=JSON&SORT=ID&DEEP=1&SORT_BY=ASC&LIMIT=250&FILTER[0][KEY]=ID&FILTER[0][CONDITION]=%3E&FILTER[0][VALUE]={2}", ProfileURL, page.ID, highestrecord);
-            // requesturl = "https://" + iformconfig.iformserverurl + ".iformbuilder.com/exzact/dataJSON.php?TYPE=ID&PAGE_ID=" + page.ID + "&TABLE_NAME=_data" + iformconfig.profileid + "_" + page.NAME.ToLower() + datastring;
             Records records = new Records(page, requesturl, iformconfig.iformusername, iformconfig.iformpassword, favorranking);
-            //List<long> ids = records.DownloadIDs(requesturl);
-            //Sort the List of IDs
-            
             records.RecordSet = records.GetPageFeed(requesturl, accesscode);
-            /*foreach (long id in ids)
-            {
-                try
-                {
-                    requesturl = string.Format("https://{0}.iformbuilder.com/exzact/dataJSON.php?PAGE_ID={1}&TABLE_NAME=_data{2}&ID={3}", iformconfig.iformserverurl, page.ID, iformconfig.profileid + "_" + page.NAME.ToLower(), id);
-                    result = records.CreateRecord(requesturl);
-                    records.RecordSet.Add(result);
-                }
-                catch
-                {
-                }
-            }*/
             return records;
         }
 
@@ -342,7 +333,8 @@ namespace iFormBuilderAPI
                     if (iformconfig.refreshcode.Length == 0)
                     {
                         //Get the Code using the Secret Key
-                        string jwt = CreateJWT(iformconfig.secretkey, iformconfig.clientid, requesturl, 300);
+                        
+                        string jwt = CreateJWT(iformconfig.secretkey, iformconfig.clientid, requesturl, 600);
                         Console.Write(jwt);
                         opts = string.Format("grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion={0}", jwt);
                     }

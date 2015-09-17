@@ -54,7 +54,7 @@ namespace iFormBuilderAPI_Unit_Testing
         //Use TestInitialize to run code before running each test
         IConfiguration config;
         long pagetotest = 8667965;
-        string configfile = @"C:\Project Work\iFormBuilder Tools\Config\crs_config.xml";
+        string configfile = @"C:\Projects\crs_config.xml";
 
         //long pagetotest = 144678;
         [TestInitialize()]
@@ -96,7 +96,6 @@ namespace iFormBuilderAPI_Unit_Testing
             api.ReadConfiguration(configfile);
 
             AccessCode actual;
-            actual = api.accesscode;
             actual = api.accesscode;
             Assert.IsFalse(actual.isExpired);
         }

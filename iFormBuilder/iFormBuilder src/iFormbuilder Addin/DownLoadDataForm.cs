@@ -37,6 +37,7 @@ namespace iFormToolbar
                 GP = new Geoprocessor();
                 GP.OverwriteOutput = true;
                 GP.AddToolbox(Utilities.iFormFolder + "\\" + "iFormTools.tbx");
+                GP.AddMessage(string.Format("Using the Toolbox at:  {0}", Utilities.iFormFolder + "\\" + "iFormTools.tbx"));
 
                 // Create a variant. Data is in the workspace.
                 IVariantArray parameters = new VarArrayClass();

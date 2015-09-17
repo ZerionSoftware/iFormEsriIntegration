@@ -42,6 +42,39 @@ namespace iFormToolbar
             }
         }
 
+         private static string _iformtempfolder = string.Format("{0}\\{1}","C:\\temp","ESRI");
+        public static string iFormTempFolder
+        {
+            get
+            {
+                try
+                {
+                    if (_iformtempfolder == string.Format("{0}\\{1}", "C:\\temp", "ESRI"))
+                    {
+                        string agsfolder = _iformtempfolder;
+                        string iformfolder = String.Empty;
+                        if (Directory.Exists(agsfolder))
+                        {
+                            iformfolder = string.Format("{0}\\{1}",agsfolder,"iformbuilder");
+                            if (!Directory.Exists(iformfolder))
+                                Directory.CreateDirectory(iformfolder);
+                        }
+                        return iformfolder;
+                    }
+                    else
+                        return _iformtempfolder;
+                }
+                catch (Exception ex)
+                {
+                    return "";
+                }
+            }
+            set
+            {
+                _iformtempfolder = value;
+            }
+        }
+
         public static string iFormSchedulerFolder
         {
             get

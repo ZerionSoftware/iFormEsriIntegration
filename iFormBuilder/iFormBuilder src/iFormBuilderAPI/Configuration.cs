@@ -153,6 +153,7 @@ namespace iFormBuilderAPI
             //Write sub-elements
             writer.WriteElementString("clientid", this.clientid);
             writer.WriteElementString("refreshcode", _refreshcode);
+            writer.WriteElementString("secretkey", _secretkey);
             writer.WriteElementString("iformserverurl", _iformserverurl);
             writer.WriteElementString("iformusername", _iformusername);
             writer.WriteElementString("iformpassword", _iformpassword);

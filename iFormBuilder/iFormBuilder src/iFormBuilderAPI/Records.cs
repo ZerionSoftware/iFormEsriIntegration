@@ -215,8 +215,11 @@ namespace iFormBuilderAPI
                 foreach (KeyValuePair<string, object> kvp in r.Record)
                 {
                     if (page.HasLocationWidget && page.LocationElement.NAME == kvp.Key && kvp.Value != null)
+                    {
+                        //"Latitude:-18.149009.\nLongitude:49.401572.\nAltitude:17.594269.\nVitesse:0.340000.\nPrécision horizontale:5.000000.\nPrécision verticale:8.000000.\nTemps:19:04:17 UTC+3"
                         location = kvp.Value.ToString().Replace(",", ".");
-
+                        location = location.Replace(".\n", ":");
+                    }
                     if (kvp.Key == "MODIFIED_LOCATION" && kvp.Value != null)
                         modlocation = kvp.Value.ToString().Replace(",", ".");
 

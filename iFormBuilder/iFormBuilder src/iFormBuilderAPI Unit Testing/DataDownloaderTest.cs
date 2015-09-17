@@ -87,9 +87,13 @@ namespace iFormBuilderAPI_Unit_Testing
         //long pagetotest = 142606573;
         //string tablename = "flat_survey";
         //string configfile = @"C:\Project Work\iFormBuilder Tools\Config\wvdrc_config.xml";
-        long pagetotest = 409301;
-        string tablename = "lead_capture_api";
-        string configfile = @"\\psf\Home\Documents\My Projects\iFormBuilder Testing\load_config.xml";
+        //long pagetotest = 409301;
+        //string tablename = "lead_capture_api";
+        //string configfile = @"\\psf\Home\Documents\My Projects\iFormBuilder Testing\load_config.xml";
+        IConfiguration config;
+        long pagetotest = 8667965;
+        string tablename = "gps";
+        string configfile = @"C:\Projects\crs_config.xml";
 
         [TestInitialize()]
         public void MyTestInitialize()
@@ -122,7 +126,7 @@ namespace iFormBuilderAPI_Unit_Testing
 
             DataDownloader target = new DataDownloader(api.iformconfig);
             long pageid = pagetotest;
-            string workspacepath = @"C:\temp"; 
+            string workspacepath = @"c:\\temp"; 
             IWorkspace actual;
             actual = target.SchemaBuilder(pageid, workspacepath,false);
             Assert.IsTrue(actual != null);
@@ -167,7 +171,7 @@ namespace iFormBuilderAPI_Unit_Testing
             string workspacepath = @"C:\temp";
             IWorkspace workspace;
             workspace = target.SchemaBuilder(pageid, workspacepath,true);
-            workspace = target.DownloadData(pageid, tablename, workspace,2);
+            workspace = target.DownloadData(pageid, tablename, workspace,0);
             Assert.IsTrue(workspace != null);
         }
 

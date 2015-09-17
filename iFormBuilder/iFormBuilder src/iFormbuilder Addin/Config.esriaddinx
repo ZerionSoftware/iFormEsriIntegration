@@ -2,13 +2,13 @@
   <Name>iFormBuilder Tools</Name>
   <AddInID>{B2581E28-AF02-495E-ADAE-0D3E0F5A8C9E}</AddInID>
   <Description>Tools to handle interaction between iFormBuilder data and ArcGIS Platform</Description>
-  <Version>4.02</Version>
+  <Version>5.0</Version>
   <Image>Images\iFormToolbar.png</Image>
   <Author>Esri Professional Services</Author>
   <Company>Esri</Company>
   <Date>7/13/2014</Date>
   <Targets>
-    <Target name="Desktop" version="10.3.1" />
+    <Target name="Desktop" version="10.3" />
   </Targets>
   <AddIn language="CLR4.0" library="iFormToolbar.dll" namespace="iFormToolbar">
     <ArcMap>

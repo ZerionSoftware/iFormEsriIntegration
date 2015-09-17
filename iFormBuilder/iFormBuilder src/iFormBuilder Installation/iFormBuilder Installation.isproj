@@ -1,4 +1,5 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<!-- Select a Product Configuration -->
 		<InstallShieldProductConfiguration>Express</InstallShieldProductConfiguration>
@@ -26,22 +27,22 @@
 			<TargetPath>My Test Exe.exe</TargetPath>
 		</TaggedOutputs> -->
 	</ItemGroup>
-	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2012SpringLimited\InstallShield.targets"/>
+	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2015Limited\InstallShield.targets"/>
 	<ItemGroup>
-		<ProjectReference Include="..\..\iFormBuilderAPI\iFormBuilderAPI.csproj">
+		<ProjectReference Include="..\ArcGISTools\ArcGISTools.csproj">
+			<Name>ArcGISTools</Name>
+			<Project>{40DBD583-17C4-4E00-9D8D-D4653BEAE992}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\iFormBuilderAPI\iFormBuilderAPI.csproj">
 			<Name>iFormBuilderAPI</Name>
 			<Project>{B5AECF27-07BF-40AD-A630-1875CDB4A1ED}</Project>
 		</ProjectReference>
-		<ProjectReference Include="..\ArcGISTools\ArcGISTools.csproj">
-			<Name>ArcGISTools1</Name>
-			<Project>{40DBD583-17C4-4E00-9D8D-D4653BEAE992}</Project>
-		</ProjectReference>
 		<ProjectReference Include="..\iFormGPTools\iFormGPTools.csproj">
-			<Name>iFormGPTools1</Name>
+			<Name>iFormGPTools</Name>
 			<Project>{D02CDD8B-1CD9-4A34-A017-59850D351079}</Project>
 		</ProjectReference>
 		<ProjectReference Include="..\iForm Tools\iFormTools.csproj">
-			<Name>iFormTools1</Name>
+			<Name>iFormTools</Name>
 			<Project>{421F0C63-105D-4490-92FE-AE7013AFD882}</Project>
 		</ProjectReference>
 		<ProjectReference Include="..\iFormbuilder Addin\iFormbuilder Add In.csproj">

@@ -88,30 +88,44 @@ namespace iFormTools
 
         private IWorkspace schemabuilder(long pageid, IWorkspace workspace, bool SubFormsAsTables)
         {
-            List<int> pageids = new List<int>();
-            domainassignments = new List<assigntodomain>();
-
-            iFormBuilderAPI.Page schemaPage = iformbuilder.GetPage(pageid);
-
-            _processeddomains = new List<int>();
-            domainassignments = new List<assigntodomain>();
-
-            CreateMetadataTables(workspace, schemaPage);
-            CreateStandaloneFeatureClass((IFeatureWorkspace)workspace, schemaPage, SubFormsAsTables);
-            
-            //Add a Table to Manage Sync with iFormBuilder
-            IDataset dataset = ArcGISTools.Utilities.GetDataSet(workspace, SyncTable);
-            if (dataset == null)
-                CreateSyncTable(workspace);
-
-            //Proccess the Workspace Domains created
-            foreach (assigntodomain assdom in domainassignments)
+            try
             {
-                AssignDomainToField(assdom, ref workspace);
-            }
+                List<int> pageids = new List<int>();
+                domainassignments = new List<assigntodomain>();
 
-            BuildRelationshipClasses(schemaPage, workspace);
-            return workspace;
+                iFormBuilderAPI.Page schemaPage = iformbuilder.GetPage(pageid);
+
+                _processeddomains = new List<int>();
+                domainassignments = new List<assigntodomain>();
+
+                CreateMetadataTables(workspace, schemaPage);
+                try
+                {
+                    CreateStandaloneFeatureClass((IFeatureWorkspace)workspace, schemaPage, SubFormsAsTables);
+                }
+                catch(Exception ex)
+                {
+                    throw new Exception("Error genrating the Standalone Feature Classes", ex);
+                }
+
+                //Add a Table to Manage Sync with iFormBuilder
+                IDataset dataset = ArcGISTools.Utilities.GetDataSet(workspace, SyncTable);
+                if (dataset == null)
+                    CreateSyncTable(workspace);
+
+                //Proccess the Workspace Domains created
+                foreach (assigntodomain assdom in domainassignments)
+                {
+                    AssignDomainToField(assdom, ref workspace);
+                }
+
+                BuildRelationshipClasses(schemaPage, workspace);
+                return workspace;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Erroring the Schema Creation", ex);
+            }
 
         }
 
@@ -517,34 +531,55 @@ namespace iFormTools
 
                         if (ele.WidgetType == Element.Widget.MultiSelect)
                         {
-                            //If this is a Multi Select Field Break the Option list into individual fields to allow the data to be analyzed better
-                            //Get the Option List for this multi select
-                            OptionList optList = iformbuilder.GetOptionList(ele.OPTION_LIST_ID);
-                            foreach (Option opt in optList.OPTIONS)
+                            try
                             {
-                                field = ArcGISTools.Utilities.translateIFormToEsri(ele,opt);
-                                fieldsEdit.AddField(field);
+                                //If this is a Multi Select Field Break the Option list into individual fields to allow the data to be analyzed better
+                                //Get the Option List for this multi select
+                                OptionList optList = iformbuilder.GetOptionList(ele.OPTION_LIST_ID);
+                                foreach (Option opt in optList.OPTIONS)
+                                {
+                                    field = ArcGISTools.Utilities.translateIFormToEsri(ele, opt);
+                                    fieldsEdit.AddField(field);
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception(string.Format("Error in generating field with multi-select: {0},{1}", ele.NAME, ele.OPTION_LIST_ID), ex);
                             }
                         }
                         else
                         {
-                            //Add a Field to the Workspace
-                            field = ArcGISTools.Utilities.translateIFormToEsri(ele);
-                            fieldsEdit.AddField(field);
-                            Console.WriteLine(field.Name);
+                            try
+                            {
+                                //Add a Field to the Workspace
+                                field = ArcGISTools.Utilities.translateIFormToEsri(ele);
+                                fieldsEdit.AddField(field);
+                                Console.WriteLine(field.Name);
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception(string.Format("Error in generating field with : {0}", ele.NAME), ex);
+                            }
                         }
 
                         if (ele.OPTION_LIST_ID != 0 && ele.WidgetType != Element.Widget.MultiSelect)
                         {
-                            assigntodomain assDom = new assigntodomain();
-                            assDom.domain = CreateWorkspaceDomains((IWorkspace)workspace, ele.OPTION_LIST_ID, ele.WidgetType);
-                            if (assDom.domain != null)
+                            try
                             {
-                                assDom.ID = ele.OPTION_LIST_ID;
-                                assDom.field = field;
-                                assDom.name = TranslateTableNames(page.NAME);
+                                assigntodomain assDom = new assigntodomain();
+                                assDom.domain = CreateWorkspaceDomains((IWorkspace)workspace, ele.OPTION_LIST_ID, ele.WidgetType);
+                                if (assDom.domain != null)
+                                {
+                                    assDom.ID = ele.OPTION_LIST_ID;
+                                    assDom.field = field;
+                                    assDom.name = TranslateTableNames(page.NAME);
 
-                                domainassignments.Add(assDom);
+                                    domainassignments.Add(assDom);
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception(string.Format("Error in assigning domain : {0}", ele.NAME), ex);
                             }
                         }
                     }
@@ -558,7 +593,7 @@ namespace iFormTools
                 fieldsEdit.AddField(oidField);
 
                 //Add the iForm Specific Items
-                foreach (IField iField in this.iFormItems(page))
+                foreach (IField iField in this.iFormItems(page,fieldsEdit))
                 {
                     fieldsEdit.AddField(iField);
                 }
@@ -607,19 +642,26 @@ namespace iFormTools
                           fieldError.FieldError);
                     }
                 }
- 
+
                 // The enumFieldError enumerator can be inspected at this point to determine 
                 // which fields were modified during validation.
 
                 // Create the feature class. Note that the CLSID parameter is null—this indicates to use the
                 // default CLSID, esriGeodatabase.Feature (acceptable in most cases for feature classes).
                 string tablename = page.NAME.Replace(" ", "");
-                IFeatureClass featureClass = workspace.CreateFeatureClass
-                    (TranslateTableNames(page.NAME), validatedFields, null, null,
-                    esriFeatureType.esriFTSimple, "Shape", "");
+                try
+                {
+                    IFeatureClass featureClass = workspace.CreateFeatureClass
+                        (TranslateTableNames(page.NAME), validatedFields, null, null,
+                        esriFeatureType.esriFTSimple, "Shape", "");
 
-                //Enable the Attachments for this feature class
-                EnableAttachments((IDataset)featureClass);
+                    //Enable the Attachments for this feature class
+                    EnableAttachments((IDataset)featureClass);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(string.Format("Error Creating Standalone Feature Class:  {0}", page.NAME));
+                }
 
                 //Process any Subforms for this pages
                 foreach (iFormBuilderAPI.Page subform in page.Subforms)
@@ -630,6 +672,7 @@ namespace iFormTools
                         CreateObjectClass((IWorkspace)workspace, subform);
                 }
             }
+
             catch (Exception ex)
             {
                 throw new Exception(string.Format("Error in Creating Standonlone Feature Class: {0} ", ex.Message));
@@ -678,27 +721,32 @@ namespace iFormTools
                             fieldsEdit.AddField(field);
 
                             //Add the Field Information to the Metadata Table
-
-
                             if (ele.OPTION_LIST_ID != 0)
                             {
-                                //Translate the Pick List into the Coded Value Domain
-                                assigntodomain assDom = new assigntodomain();
-                                assDom.domain = CreateWorkspaceDomains((IWorkspace)workspace, ele.OPTION_LIST_ID, ele.WidgetType);
-                                if (assDom.domain != null)
+                                try
                                 {
-                                    assDom.ID = ele.OPTION_LIST_ID;
-                                    assDom.field = field;
-                                    assDom.name = TranslateTableNames(page.NAME);
+                                    //Translate the Pick List into the Coded Value Domain
+                                    assigntodomain assDom = new assigntodomain();
+                                    assDom.domain = CreateWorkspaceDomains((IWorkspace)workspace, ele.OPTION_LIST_ID, ele.WidgetType);
+                                    if (assDom.domain != null)
+                                    {
+                                        assDom.ID = ele.OPTION_LIST_ID;
+                                        assDom.field = field;
+                                        assDom.name = TranslateTableNames(page.NAME);
 
-                                    domainassignments.Add(assDom);
+                                        domainassignments.Add(assDom);
+                                    }
+                                }
+                                catch (Exception ex)
+                                {
+                                    throw new Exception(string.Format("Error in creating the domain for field:  {0}.  Option List:  {1} on Page:  {2}", ele.NAME, ele.OPTION_LIST_ID, page.NAME), ex);
                                 }
                             }
                         }
                     }
 
                     //Add the iForm Specific Items
-                    foreach (IField iField in this.iFormItems(page))
+                    foreach (IField iField in this.iFormItems(page, fieldsEdit))
                     {
                         fieldsEdit.AddField(iField);
                     }
@@ -976,9 +1024,9 @@ namespace iFormTools
             // Value and name pairs.
             foreach (Option opt in optList.OPTIONS)
             {
-                //codedValueDomain.AddCode(opt.KEY_VALUE, opt.LABEL);
+                codedValueDomain.AddCode(opt.KEY_VALUE, opt.LABEL);
                 //TODO:  Fix this a variable
-                codedValueDomain.AddCode(opt.KEY_VALUE, opt.KEY_VALUE);
+                //codedValueDomain.AddCode(opt.KEY_VALUE, opt.KEY_VALUE);
             }
 
             //Populate the netadata table for this domain
@@ -988,7 +1036,7 @@ namespace iFormTools
             IDomain domain = (IDomain)codedValueDomain;
             //Clean up the domain name
             domain.Name = Regex.Replace(optList.NAME, @"^""|""$|\\n?|/|\s+|'", string.Empty);
-            if (ele == Element.Widget.Number || ele == Element.Widget.MultiSelect)
+            if (ele == Element.Widget.Number)
                 domain.FieldType = esriFieldType.esriFieldTypeInteger;
             else
                 domain.FieldType = esriFieldType.esriFieldTypeString;
@@ -1336,7 +1384,7 @@ namespace iFormTools
         /// </summary>
         /// <param name="page">The page.</param>
         /// <returns></returns>
-        public List<IField> iFormItems(iFormBuilderAPI.Page page)
+        public List<IField> iFormItems(iFormBuilderAPI.Page page, IFieldsEdit fieldEdits)
         {
             List<IField> _list = new List<IField>();
             IField field = new FieldClass();
@@ -1446,48 +1494,86 @@ namespace iFormTools
             fieldedit.Length_2 = 100;
             _list.Add(fieldedit);
 
-            field = new FieldClass();
-            fieldedit = (IFieldEdit)field;
-            fieldedit.Name_2 = "Latitude";
-            fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
-            _list.Add(fieldedit);
+            if (!CheckReservedName(fieldEdits, "Latitude"))
+            {
+                field = new FieldClass();
+                fieldedit = (IFieldEdit)field;
+                fieldedit.Name_2 = "LATITUDE";
+                fieldedit.AliasName_2 = "Latitude";
+                fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
+                _list.Add(fieldedit);
+            }
 
-            field = new FieldClass();
-            fieldedit = (IFieldEdit)field;
-            fieldedit.Name_2 = "Longitude";
-            fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
-            _list.Add(fieldedit);
+            if (!CheckReservedName(fieldEdits, "Longitude"))
+            {
+                field = new FieldClass();
+                fieldedit = (IFieldEdit)field;
+                fieldedit.Name_2 = "LONGITUDE";
+                fieldedit.AliasName_2 = "Longitude";
+                fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
+                _list.Add(fieldedit);
+            }
 
-            field = new FieldClass();
-            fieldedit = (IFieldEdit)field;
-            fieldedit.Name_2 = "Altitude";
-            fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
-            _list.Add(fieldedit);
+            if (!CheckReservedName(fieldEdits, "Altitude"))
+            {
+                field = new FieldClass();
+                fieldedit = (IFieldEdit)field;
+                fieldedit.Name_2 = "Altitude";
+                fieldedit.Name_2 = "ALTITUDE";
+                fieldedit.AliasName_2 = "iFormBuilder Altitude";
+                fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
+                _list.Add(fieldedit);
+            }
 
-            field = new FieldClass();
-            fieldedit = (IFieldEdit)field;
-            fieldedit.Name_2 = "Speed";
-            fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
-            _list.Add(fieldedit);
+            if (!CheckReservedName(fieldEdits, "Speed"))
+            {
+                field = new FieldClass();
+                fieldedit = (IFieldEdit)field;
+                fieldedit.Name_2 = "Speed";
+                fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
+                _list.Add(fieldedit);
+            }
 
-            field = new FieldClass();
-            fieldedit = (IFieldEdit)field;
-            fieldedit.Name_2 = "Accuracy";
-            fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
-            _list.Add(fieldedit);
+            if (!CheckReservedName(fieldEdits, "Accuracy"))
+            {
+                field = new FieldClass();
+                fieldedit = (IFieldEdit)field;
+                fieldedit.Name_2 = "Accuracy";
+                fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
+                _list.Add(fieldedit);
+            }
 
-            field = new FieldClass();
-            fieldedit = (IFieldEdit)field;
-            fieldedit.Name_2 = "Provider";
-            fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
-            _list.Add(fieldedit);
+            if (!CheckReservedName(fieldEdits, "Provider"))
+            {
+                field = new FieldClass();
+                fieldedit = (IFieldEdit)field;
+                fieldedit.Name_2 = "Provider";
+                fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
+                _list.Add(fieldedit);
+            }
 
-            field = new FieldClass();
-            fieldedit = (IFieldEdit)field;
-            fieldedit.Name_2 = "Time";
-            fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
-            _list.Add(fieldedit);
+            if (!CheckReservedName(fieldEdits, "Time"))
+            {
+                field = new FieldClass();
+                fieldedit = (IFieldEdit)field;
+                fieldedit.Name_2 = "Time";
+                fieldedit.Type_2 = esriFieldType.esriFieldTypeDouble;
+                _list.Add(fieldedit);
+            }
+
             return _list;
+        }
+
+        private bool CheckReservedName(IFieldsEdit fields, string checkname)
+        {
+            for(int i= 0;i<fields.FieldCount - 1;i++)
+            {
+                IField field = fields.get_Field(i);
+                if (field.Name.ToUpper() == checkname.ToUpper())
+                    return true;
+            }
+
+            return false;
         }
 
         public ArrayList iFormLocationItems

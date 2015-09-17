@@ -40,9 +40,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(350, 134);
+            this.button1.Location = new System.Drawing.Point(301, 134);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(124, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Download Data";
             this.button1.UseVisualStyleBackColor = true;
@@ -68,9 +68,9 @@
             "Location Widget",
             "Created Location",
             "Modified Location"});
-            this.cboLocationRanking.Location = new System.Drawing.Point(170, 47);
+            this.cboLocationRanking.Location = new System.Drawing.Point(171, 47);
             this.cboLocationRanking.Name = "cboLocationRanking";
-            this.cboLocationRanking.Size = new System.Drawing.Size(242, 21);
+            this.cboLocationRanking.Size = new System.Drawing.Size(241, 21);
             this.cboLocationRanking.TabIndex = 2;
             // 
             // tableLayoutPanel1
@@ -102,9 +102,9 @@
             // cboDownloadLayers
             // 
             this.cboDownloadLayers.FormattingEnabled = true;
-            this.cboDownloadLayers.Location = new System.Drawing.Point(170, 3);
+            this.cboDownloadLayers.Location = new System.Drawing.Point(171, 3);
             this.cboDownloadLayers.Name = "cboDownloadLayers";
-            this.cboDownloadLayers.Size = new System.Drawing.Size(242, 21);
+            this.cboDownloadLayers.Size = new System.Drawing.Size(241, 21);
             this.cboDownloadLayers.TabIndex = 4;
             // 
             // label2

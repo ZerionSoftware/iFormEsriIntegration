@@ -25,7 +25,8 @@ namespace iFormBuilderAPI
         {
             //Replace any commas in the recordinformation with .
             recordinformation = recordinformation.Replace(',', '.');
-            string[] splitvalues = recordinformation.Split(':');
+            char[] splitter = ":".ToCharArray();
+            string[] splitvalues = recordinformation.Split(splitter);
             if (splitvalues.Length == 8)
             {
                 //47.048837:-122.903474:20.359947:93.174871:10.384083:-1.000000:-1.000000:1363968593.979734
@@ -37,12 +38,24 @@ namespace iFormBuilderAPI
                 this.Provider = float.Parse(splitvalues[5]);
                 this.Time = float.Parse(splitvalues[7]);
             }
+
+            //Newer Format:  "Latitude:-18.149009.\nLongitude:49.401572.\nAltitude:17.594269.\nVitesse:0.340000.\nPrécision horizontale:5.000000.\nPrécision verticale:8.000000.\nTemps:19:04:17 UTC+3"
+            if (splitvalues.Length == 16)
+            {
+                this.Latitude = float.Parse(splitvalues[1]);
+                this.Longitude = float.Parse(splitvalues[3]);
+                this.Altitude = float.Parse(splitvalues[5]);
+                this.Speed = float.Parse(splitvalues[7]);
+                this.Accuracy = float.Parse(splitvalues[9]);
+                this.Time = float.Parse(splitvalues[13]);
+            }
         }
 
         public void UpdateValuesFromField(string recordinformation)
         {
             recordinformation = recordinformation.Replace(',', '.');
-            string[] splitvalues = recordinformation.Split(':');
+            char[] splitter = ":".ToCharArray();
+            string[] splitvalues = recordinformation.Split(splitter);
             if (splitvalues.Length == 8)
             {
                 //47.048837:-122.903474:20.359947:93.174871:10.384083:-1.000000:-1.000000:1363968593.979734
@@ -51,6 +64,17 @@ namespace iFormBuilderAPI
                 this.Accuracy = float.Parse(splitvalues[4]);
                 this.Provider = float.Parse(splitvalues[5]);
                 this.Time = float.Parse(splitvalues[7]);
+            }
+
+            //Newer Format:  "Latitude:-18.149009.\nLongitude:49.401572.\nAltitude:17.594269.\nVitesse:0.340000.\nPrécision horizontale:5.000000.\nPrécision verticale:8.000000.\nTemps:19:04:17 UTC+3"
+            if(splitvalues.Length == 16)
+            {
+                this.Latitude = float.Parse(splitvalues[1]);
+                this.Longitude = float.Parse(splitvalues[3]);
+                this.Altitude = float.Parse(splitvalues[5]);
+                this.Speed = float.Parse(splitvalues[7]);
+                this.Accuracy = float.Parse(splitvalues[9]);
+                this.Time = float.Parse(splitvalues[13]);
             }
         }
 

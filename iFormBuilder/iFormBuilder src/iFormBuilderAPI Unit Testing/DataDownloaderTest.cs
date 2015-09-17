@@ -91,8 +91,8 @@ namespace iFormBuilderAPI_Unit_Testing
         //string tablename = "lead_capture_api";
         //string configfile = @"\\psf\Home\Documents\My Projects\iFormBuilder Testing\load_config.xml";
         IConfiguration config;
-        long pagetotest = 8667965;
-        string tablename = "gps";
+        long pagetotest = 8668127;
+        string tablename = "goods_distr";
         string configfile = @"C:\Projects\crs_config.xml";
 
         [TestInitialize()]
@@ -132,27 +132,6 @@ namespace iFormBuilderAPI_Unit_Testing
             Assert.IsTrue(actual != null);
         }
 
-        [TestMethod()]
-        public void SchemaBuilder_AccessCodeTest()
-        {
-            RuntimeManager.Bind(ProductCode.EngineOrDesktop);
-            ESRI.ArcGIS.esriSystem.IAoInitialize aoInitialize = new ESRI.ArcGIS.esriSystem.AoInitializeClass();
-            aoInitialize.Initialize(esriLicenseProductCode.esriLicenseProductCodeAdvanced);
-
-            iFormBuilder api = new iFormBuilder();
-            api.ReadConfiguration(configfile);
-
-            //Generate an access code
-            iFormBuilder api_download = new iFormBuilder(api.accesscode.access_token,api.iformconfig.iformserverurl,api.iformconfig.profileid);
-
-            DataDownloader target = new DataDownloader(api_download.iformconfig, api_download.accesscode);
-            long pageid = pagetotest;
-            string workspacepath = @"C:\temp";
-            IWorkspace actual;
-            actual = target.SchemaBuilder(pageid, workspacepath, false);
-            Assert.IsTrue(actual != null);
-        }
-
         /// <summary>
         ///A test for DownloadData
         ///</summary>
@@ -187,15 +166,14 @@ namespace iFormBuilderAPI_Unit_Testing
 
             iFormBuilder api = new iFormBuilder();
             api.ReadConfiguration(configfile);
-
-            DataDownloader target = new DataDownloader(api.iformconfig);
-            long pageid = pagetotest;
-            string workspacepath = @"C:\temp\DRC_Congo_Extract.gdb";
+            //IConfiguration config = null; // TODO: Initialize to an appropriate value
+            DataDownloader target = new DataDownloader(api.iformconfig); // TODO: Initialize to an appropriate value
+            long pageid = pagetotest; // TODO: Initialize to an appropriate value
+            string workspacepath = @"C:\temp";
             IWorkspace workspace;
-            Type factoryType = factoryType = Type.GetTypeFromProgID("esriDataSourcesGDB.FileGDBWorkspaceFactory");
-            IWorkspaceFactory workspaceFactory = (IWorkspaceFactory)Activator.CreateInstance(factoryType);
-            workspace = workspaceFactory.OpenFromFile(workspacepath, 0);
-            workspace = target.SynchronizeData(workspace, 2);
+            workspace = target.SchemaBuilder(pageid, workspacepath, true);
+            workspace = target.DownloadData(pageid, tablename, workspace, 0);
+            workspace = target.SynchronizeData(workspace, 0);
             Assert.IsTrue(workspace != null);
         }
 

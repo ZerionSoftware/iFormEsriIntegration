@@ -109,6 +109,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <ProjectReference Include="..\ArcGISTools\ArcGISTools.csproj">
       <Project>{40dbd583-17c4-4e00-9d8d-d4653beae992}</Project>
       <Name>ArcGISTools</Name>
